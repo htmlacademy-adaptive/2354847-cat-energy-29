@@ -4,34 +4,40 @@
 <head>
   <meta charset="utf-8">
   <title>Cat Energy</title>
+  <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body class="page-body">
-  <header class="main-header">
-    <a class="main-header__logo-image logo-image"><img src="source/img/index/logo-image.svg" width="33" height="38"
-        alt="Логотип Cat energy"></a>
-    <svg class="main-header__logo-text logo-text">
-    </svg>
-    <nav class="main-nav">
-      <button class="main-nav__toggle menu-toggle" type="button"><span class="visually-hidden">Открыть
-          меню</span></button>
-      <div class="main-nav__wrapper main-nav-popover">
-        <ul class="main-nav__list site-list">
-          <li class="site-list__item"><a href="#">главная</a></li>
-          <li class="site-list__item"><a href="#">каталог продукции</a></li>
-          <li class="site-list__item"><a href="#">подбор программы</a></li>
-        </ul>
-      </div>
-    </nav>
-  </header>
+ <!-- header -->
+ <header class="main-header">
+  <div class="main-header__container">
+  <a class="main-header__logo logo">
+    <img class="logo__img" src="img/index/svg/logo-image.svg" width="33" height="38" alt="Логотип Cat energy.">
+    <img class="logo__text"src="img/index/svg/logo-text.svg" width="101" height="18" alt="Cat energy">
+  </a>
+  <nav class="main-nav">
+    <button class="main-nav__toggle menu-toggle" type="button"><span class="visually-hidden">Открыть
+        меню</span>
+      </button>
+    <div class="main-nav__wrapper main-nav-popover">
+      <ul class="main-nav__list nav-list">
+        <li class="nav-list__item"><a href="#">главная</a></li>
+        <li class="nav-list__item"><a href="#">каталог продукции</a></li>
+        <li class="nav-list__item"><a href="#">подбор программы</a></li>
+      </ul>
+    </div>
+  </nav>
+</div>
+</header>
   <main class="main-container">
     <!-- form -->
     <section class="form">
+      <div class="form-container">
       <h1 class="form__title">Подбор программы</h1>
       <p class="form__discription">Заполните анкету, и мы подберем
         программу питания для вашего кота</p>
       <h2 class="form__subtitle visually-hidden">Личные данные</h2>
-      <fieldset class="form__personal-info form-fieldset">
+      <fieldset class="form__fieldset form__personal-info">
         <ul class="form__list">
           <li class="form__item">
             <label>
@@ -53,7 +59,7 @@
         </label></li>
 
       </fieldset>
-      <fieldset class="form__type-of-programm form-radio">
+      <fieldset class="form__fieldset form__type-of-programm form-radio">
         <ul class="form__list form-radio">
           <legend class="visually-hidden">Выберите программу питания</legend>
           <li class="form__item"><label>
@@ -72,7 +78,7 @@
       </fieldset>
       <h2 class="form__subtitle">Контактные данные
         (владельца кота)</h2>
-      <fieldset class="form__contacts form-fieldset">
+      <fieldset class="form__fieldset form__contacts form-fieldset">
         <ul class="form__list">
           <li class="form__item"><label>
               E-mail:*
@@ -88,7 +94,7 @@
       <label>
         <textarea name="comment" placeholder="Расскажите обо всех повАдках кота" id="message"></textarea></label>
       <h2 class="form__subtitle">Дополнительно</h2>
-      <fieldset class="form__additional">
+      <fieldset class="form__fieldset form__additional">
         <ul class="form__list form-checkbox">
           <legend class="visually-hidden">Выберите дополнительные товары</legend>
           <li class="form__item"><label>
@@ -113,52 +119,54 @@
       </fieldset>
       <button class="form__button button primary-button" type="submit"> отправить заявку</button>
       <p class="form__note">* — Обязательные поля</p>
-
+    </div>
     </section>
 
 
 
     <!-- footer -->
-    <footer class="main-footer">
-      <div class="main-footer-container">
-        <!-- contacts -->
-        <section class="contacts">
-          <div class="contacts-container">
-            <h2 class="visually-hidden">Контакты</h2>
-            <p class="contacts__title">приглашаем к сотрудничеству дилеров!</p>
-            <p class="contacts__adress">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
-            <div class="contacts__map map"></div>
-          </div>
-        </section>
-        <!-- footer-navigation -->
-        <section class="footer-nav">
-          <svg class="main-footer__logo-text logo-text"></svg>
-          </svg>
-          <div class="main-footer__social social">
-            <ul class="social__list">
-              <li class="social__item vk">
-                <a class="social__link" href="https://vk.com/htmlacademy">
-                  <svg class="social__icon">
-                  </svg>
-                  <span class="visually-hidden">youtube</span></a>
-              </li>
-              <li class="social__item tg-logo">
-                <a class="social-link" href="https://t.me/htmlacademy">
-                  <svg class="social__icon">
-                  </svg>
-
-                  <span class="visually-hidden">Telegram.</span></a>
-              </li>
-            </ul>
-          </div>
-          <div class="main-footer__copyright copyright">
-            <p class="copyright__name">HTML Academy</p>
-            <a class="copyright__logo" href="https://htmlacademy.ru/">
-              <span class="visually-hidden">Сделано в htmlacademy</span>
-            </a>
+  <footer class="main-footer">
+    <div class="main-footer-container">
+      <!-- contacts -->
+      <section class="contacts">
+        <div class="contacts-container">
+          <h2 class="visually-hidden">Контакты</h2>
+          <p class="contacts__title">приглашаем к сотрудничеству дилеров!</p>
+          <p class="contacts__adress">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
+          <div class="contacts__map map">
 
           </div>
-        </section>
-      </div>
-    </footer>
+        </div>
+      </section>
+      <!-- footer-navigation -->
+      <section class="footer-nav">
+        <!-- <svg class="main-footer__logo-text logo-text"></svg>
+        </svg> -->
+        <div class="main-footer__social social">
+          <ul class="social__list">
+            <li class="social__item vk">
+              <a class="social__link" href="https://vk.com/htmlacademy">
+                <!-- <svg class="social__icon">
+                </svg> -->
+                <span class="visually-hidden">youtube</span></a>
+            </li>
+            <li class="social__item tg-logo">
+              <a class="social-link" href="https://t.me/htmlacademy">
+                <!-- <svg class="social__icon">
+                </svg> -->
+
+                <span class="visually-hidden">Telegram.</span></a>
+            </li>
+          </ul>
+        </div>
+        <div class="main-footer__copyright copyright">
+          <p class="copyright__name">HTML Academy</p>
+          <a class="copyright__logo" href="https://htmlacademy.ru/">
+            <span class="visually-hidden">Сделано в htmlacademy</span>
+          </a>
+
+        </div>
+      </section>
+    </div>
+  </footer>
 </body>

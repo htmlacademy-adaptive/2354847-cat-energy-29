@@ -1,0 +1,17 @@
+.main-header {
+  position: relative;
+  width: 280px;
+  min-height: 65px;
+  box-sizing: border-box;
+  margin: 0 auto;
+  // сократить
+  padding-top: 13px;
+  background-color: #ffffff;
+}
+
+.main-header__container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
