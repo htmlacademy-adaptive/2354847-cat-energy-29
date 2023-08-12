@@ -1,0 +1,27 @@
+.contacts-container--main {
+  background-color: $base-bg-color;
+}
+
+.contacts__title {
+  color: #111111;
+  font-size: 16px;
+  font-family: $Oswald;
+  font-weight: 400;
+  text-transform: uppercase;
+  line-height: 20px;
+}
+
+.contacts__adress {
+  color: $addithional-text-color;
+  font-size: 14px;
+  font-family: $Lato;
+  font-weight: 400;
+  line-height: 20px;
+}
+
+.contacts__map {
+  height: 362px;
+  background-image: url("../img/index/png/maps.png");
+  background-position: center;
+  background-repeat: no-repeat;
+}
