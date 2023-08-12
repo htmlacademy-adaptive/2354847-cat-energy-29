@@ -4,8 +4,6 @@
   "description": "Личный проект «Кэт энерджи» от HTML Academy",
   "devDependencies": {
     "@htmlacademy/editorconfig-cli": "1.0.0",
-<<<<<<< Updated upstream
-=======
     "autoprefixer": "10.4.0",
     "browser-sync": "2.27.7",
     "gulp": "4.0.2",
@@ -15,7 +13,6 @@
     "gulp-sass": "^5.1.0",
     "postcss": "8.3.11",
     "sass": "^1.64.2",
->>>>>>> Stashed changes
     "stylelint": "13.13.1",
     "stylelint-config-htmlacademy": "^0.1.11"
   },
