@@ -1,19 +1,7 @@
-.main-header__logo {
-  opacity: 1;
 
-  &:hover {
-    opacity: 0.8;
-  }
-
-  &:active {
-    opacity: 0.6;
-  }
-}
-
-.logo__text {
+.logo__text--header {
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
 }
-
