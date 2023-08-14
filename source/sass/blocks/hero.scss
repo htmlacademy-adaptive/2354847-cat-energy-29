@@ -1,0 +1,45 @@
+.hero {
+  width: 320px;
+  margin: 0 auto;
+}
+
+.hero__wrapper {
+  position: relative;
+  box-sizing: border-box;
+  height: 302px;
+  width: 100%;
+  margin-bottom: 137px;
+  padding: 27px 35px;
+  background-image: linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), url("../img/index/jpeg/hero-background.jpg");
+  background-position: center, center;
+  background-repeat: no-repeat, no-repeat;
+  text-align: center;
+  color: #ffffff;
+  font-family: "Oswald", sans-serif;
+  font-weight: 400;
+}
+
+.hero__title {
+  font-size: 36px;
+  line-height: 36px;
+  font-weight: 400;
+}
+
+.hero__slogan {
+  font-size: 14px;
+  line-height: 14px;
+  text-transform: uppercase;
+}
+
+.hero__img {
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.hero__button {
+  width: 280px;
+  margin: 0 auto;
+}
+
