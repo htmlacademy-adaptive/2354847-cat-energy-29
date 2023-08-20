@@ -6,7 +6,7 @@
 .hero__wrapper {
   position: relative;
   box-sizing: border-box;
-  height: 302px;
+  min-height: 302px;
   width: 100%;
   margin-bottom: 137px;
   padding: 27px 35px;
@@ -41,5 +41,57 @@
 .hero__button {
   width: 280px;
   margin: 0 auto;
+  margin-bottom: 20px;
 }
 
+@media (min-width: $tablet-width) {
+  .hero {
+    width: 768px;
+    margin: 0 auto;
+  }
+
+  .hero__wrapper {
+    min-height: 180px;
+    width: 768px;
+    margin: 0;
+    margin-bottom: 50px;
+    padding: 0;
+    padding-left: 120px;
+    background-image: none;
+    background-color: $base-bg-color;
+    text-align: start;
+    color: $base-text-color;
+  }
+
+  .hero__title {
+    width: 414px;
+    font-size: 50px;
+    line-height: 60px;
+    font-weight: 400;
+    margin-bottom: 40px;
+  }
+
+  .hero__slogan {
+    font-size: 20px;
+    line-height: 20px;
+    text-transform: uppercase;
+  }
+
+  .hero__img {
+    position: absolute;
+    top: 360px;
+    left: 50%;
+
+  }
+
+  .hero__button {
+    position: relative;
+    z-index: 2;
+    width: 244px;
+    margin: 0 0 526px 120px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+
+}

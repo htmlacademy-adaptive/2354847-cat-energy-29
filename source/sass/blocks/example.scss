@@ -48,3 +48,52 @@
   text-transform: uppercase;
   line-height: 20px;
 }
+
+@media (min-width: $tablet-width) {
+  .example-wrapper {
+    box-sizing: border-box;
+    width: 768px;
+    margin: 0 auto;
+    padding: 45px 30px 101px 30px;
+  }
+
+  .example__title {
+    margin-bottom: 60px;
+    font-size: 60px;
+    line-height: 60px;
+  }
+
+  .example__intro {
+    margin-bottom: 55px;
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  .example__number {
+    font-size: 30px;
+    line-height: 37px;
+  }
+
+  .example__description {
+    font-size: 14px;
+    line-height: 14px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .example-wrapper {
+    box-sizing: border-box;
+    width: 1440px;
+    margin: 0 auto;
+    padding: 0 110px 75px 110px;
+  }
+
+  .example__title {
+    margin-bottom: 146px;
+  }
+
+  .example__intro {
+    width: 433px;
+    margin-bottom: 69px;
+  }
+}
