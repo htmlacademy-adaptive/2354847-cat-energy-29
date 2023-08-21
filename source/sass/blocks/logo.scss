@@ -5,3 +5,21 @@
   left: 50%;
   transform: translate(-50%, -50%);
 }
+
+@media (min-width: $tablet-width) {
+  .logo__text--header {
+    position: absolute;
+    top: 41px;
+    left: 103px;
+    // transform: translateY(-50%);
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .logo__text--header {
+    position: absolute;
+    // top: 41px;
+    // left: 103px;
+    // transform: translateY(-50%);
+  }
+}

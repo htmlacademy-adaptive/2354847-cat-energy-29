@@ -3,6 +3,7 @@
 
 <head>
   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Cat Energy</title>
   <link rel="stylesheet" href="css/style.css">
 </head>
@@ -21,9 +22,9 @@
       </button>
     <div class="main-nav__wrapper main-nav-popover">
       <ul class="main-nav__list nav-list">
-        <li class="nav-list__item"><a href="#">главная</a></li>
-        <li class="nav-list__item"><a href="#">каталог продукции</a></li>
-        <li class="nav-list__item"><a href="#">подбор программы</a></li>
+        <li class="main-nav__item"><a href="#">главная</a></li>
+        <li class="main-nav__item"><a href="#">каталог продукции</a></li>
+        <li class="main-nav__item"><a href="#">подбор программы</a></li>
       </ul>
     </div>
   </nav>
@@ -42,6 +43,7 @@
     </section>
     <!-- product-line -->
     <section class="product-line">
+      <div class="product-line-wrapper">
       <h2 class="visually-hidden">Продукция представлена следующими линиями.</h2>
       <div class="product-line__item product-line-card">
                <h3 class="product-line__title">Похудение</h3>
@@ -55,6 +57,7 @@
           Energy Pro поможет вашему коту нарастить необходимые мышцы!</p>
         <a class="product-line__link link-button" href="#">каталог pro</a>
       </div>
+    </div>
     </section>
     <!-- advantages -->
     <section class="advantages">
@@ -114,9 +117,11 @@
       <!-- contacts -->
       <section class="contacts">
         <div class="contacts-container contacts-container--main">
-          <h2 class="visually-hidden">Контакты</h2>
+           <h2 class="visually-hidden">Контакты</h2>
+          <div class="contacts-container-text">
           <p class="contacts__title">приглашаем к сотрудничеству дилеров!</p>
           <p class="contacts__adress">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
+          </div>
           <div class="contacts__map map"></div>
         </div>
       </section>

@@ -6,6 +6,7 @@
 }
 
 .additional-products__title {
+  margin-bottom: 36px;
   color: $base-text-color;
   font-size: 24px;
   font-family: $Oswald;
@@ -13,9 +14,14 @@
   line-height: 24px;
 }
 
-// .additional-products__list
+.additional-products__list {
+  display: flex;
+  flex-direction: column;
+}
 
-// .additional-products__item
+.additional-products__item {
+  min-height: 130px;
+}
 
 .additional-products__name {
   color: #222222;
@@ -52,4 +58,97 @@
   font-family: $Lato;
   font-weight: 400;
   line-height: 20px;
+}
+
+@media (min-width: $tablet-width) {
+  .additional-products-container {
+    width: 768px;
+    padding: 70px 30px 75px 30px;
+  }
+
+  .additional-products__title {
+    margin-bottom: 80px;
+    font-size: 36px;
+    line-height: 36px;
+  }
+
+  .additional-products__item {
+    min-height: 140px;
+  }
+
+  .additional-products__name {
+    font-size: 20px;
+    line-height: 20px;
+  }
+
+  .additional-products__features {
+    font-size: 16px;
+    line-height: 20px;
+  }
+
+  .additional-products__button {
+    width: 632px;
+  }
+
+  .additional-products__bonus-card {
+    margin-top: 70px;
+    min-height: 200px;
+    background-image: linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), url("../img/catalog/png/gift_background.png");
+    background-position: center, center;
+    background-repeat: no-repeat, no-repeat;
+  }
+
+  .additional-products__bonus-description {
+    width: 161px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .additional-products-container {
+    box-sizing: border-box;
+    width: 1220px;
+    padding: 0;
+    margin-bottom: 87px;
+    display: grid;
+    grid-template-columns: 975px 245px;
+    grid-template-areas:
+      "A A"
+      "B C";
+  }
+
+  .additional-products__title {
+    grid-area: A;
+  }
+
+  .additional-products__list {
+    width: 894px;
+    grid-area: B;
+  }
+
+  .additional-products__item {
+    min-height: 70px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    border: 1px $special-grey solid;
+  }
+
+  .additional-products__button {
+    width: 244px;
+  }
+
+
+  .additional-products__bonus-card {
+    grid-area: C;
+    margin-top: 0;
+    min-height: 288px;
+    background-image: linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), url("../img/catalog/png/gift_background.png");
+    background-position: center, center;
+    background-repeat: no-repeat, no-repeat;
+  }
+
+  .additional-products__bonus-description {
+    width: 161px;
+  }
 }

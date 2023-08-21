@@ -1,6 +1,11 @@
 .footer-navigation-container {
   background-color: #f2f2f2;
   padding: 40px 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  gap: 40px;
 }
 
 .footer-navigation__copyright-name {
@@ -11,3 +16,19 @@
   line-height: 20px;
 }
 
+@media (min-width: $tablet-width) {
+  .footer-navigation-container {
+    padding: 55px 30px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 0;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .footer-navigation-container {
+    padding: 66px 110px;
+  }
+}
