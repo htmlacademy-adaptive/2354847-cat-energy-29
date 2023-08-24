@@ -1,4 +1,36 @@
 
-// // .social__list {
-//   display: grid;
-// }
+.social__list {
+  min-width: 132px;
+  display: flex;
+  flex-direction: row;
+  align-content: center;
+  gap: 24px;
+  justify-content: space-between;
+}
+
+.social__item {
+  display: block;
+  box-sizing: border-box;
+  width: 32px;
+  text-align: center;
+}
+
+.social__link {
+  margin: 0;
+  padding: 0;
+  font-size: 0;
+  line-height: 0;
+}
+
+.social__icon {
+  fill: #666666;
+}
+
+.social__link:focus .social__icon {
+  fill: $accent-color;
+}
+
+.social__link:active .social__icon {
+  fill: rgba(104, 183, 56, 0.3);
+}
+

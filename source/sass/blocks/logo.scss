@@ -1,9 +1,20 @@
-
 .logo__text--header {
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+}
+
+.logo__text--footer {
+  fill: #111111;
+
+  &:focus {
+    fill: #3e3e3e;
+  }
+
+  &:active {
+    fill: #6b6b6b;
+  }
 }
 
 @media (min-width: $tablet-width) {
