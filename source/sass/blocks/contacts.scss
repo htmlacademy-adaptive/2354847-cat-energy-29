@@ -1,11 +1,7 @@
-.contacts-container {
-  padding-top: 20px;
-}
-
 .contacts-container-text {
+  margin: 26px 20px;
   display: flex;
   justify-content: space-between;
-  margin-bottom: 26px;
 }
 
 .contacts-container--main {
@@ -43,10 +39,6 @@
 }
 
 @media (min-width: $tablet-width) {
-  .contacts-container {
-    padding: 0;
-  }
-
   .contacts-container-text {
     padding: 61px 70px;
     margin: 0;
@@ -74,7 +66,6 @@
 
 @media (min-width: $desktop-width) {
   .contacts-container {
-    padding: 0;
     position: relative;
   }
 

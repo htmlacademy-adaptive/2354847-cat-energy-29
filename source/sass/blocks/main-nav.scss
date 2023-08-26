@@ -52,15 +52,11 @@
   &::after {
     transform: rotate(-45deg);
   }
-
-  // &:active::before,
-  // &:active::after {
-  //   background-color: fade(#ffffff, 30%);
-  // }
 }
 
 .main-nav__list {
-  // display: none;
+  // свернуть меню
+  display: none;
   width: 100%;
   margin: 0;
   position: absolute;
