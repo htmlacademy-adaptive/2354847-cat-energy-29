@@ -2,7 +2,7 @@
   box-sizing: border-box;
   width: 320px;
   margin: 0 auto;
-  padding: 25px 20px 35px 20px;
+  padding: 0 20px 35px 20px;
 }
 
 .additional-products__title {
@@ -86,7 +86,7 @@
 @media (min-width: $tablet-width) {
   .additional-products-container {
     width: 768px;
-    padding: 70px 30px 75px 30px;
+    padding: 0 30px 75px 30px;
   }
 
   .additional-products__title {
@@ -153,28 +153,42 @@
     margin-bottom: 87px;
     display: grid;
     grid-template-columns: 975px 245px;
-    grid-template-areas:
-      "A A"
-      "B C";
   }
 
   .additional-products__title {
-    grid-area: A;
+    margin-left: 0;
   }
 
   .additional-products__list {
-    width: 894px;
-    grid-area: B;
+    width: 895px;
   }
 
   .additional-products__item {
-    padding: 15px 0 17px 0;
+    padding: 0;
     min-height: 70px;
-    display: flex;
-    flex-direction: row;
+    display: grid;
+    grid-template-columns: 325px 325px 244px;
+    grid-template-rows: 72px;
+    grid-template-areas: "name features button";
     align-items: center;
-    justify-content: space-between;
-    border: 1px $special-grey solid;
+    justify-content: center;
+    border: none;
+    border-top: 1px $special-grey solid;
+    border-bottom: 1px $special-grey solid;
+  }
+
+  .additional-products__name {
+    align-self: center;
+    margin: 0;
+  }
+
+  .additional-products__features {
+    margin: 0;
+    display: grid;
+    grid-template-columns: 243px 82px;
+    align-self: center;
+    justify-content: start;
+    gap: 0;
   }
 
   .additional-products__button {
@@ -182,7 +196,6 @@
   }
 
   .additional-products__bonus-card {
-    grid-area: C;
     margin-top: 0;
     min-height: 288px;
     height: 100%;

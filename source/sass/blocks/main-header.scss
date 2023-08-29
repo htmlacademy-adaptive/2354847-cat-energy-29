@@ -6,9 +6,11 @@
   margin: 0 auto;
   padding-top: 13px;
   background-color: #ffffff;
+  border-bottom: 1px #e6e6e6 solid;
 }
 
 .main-header__container {
+  margin: 0 20px;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -35,6 +37,7 @@
     margin: 0 auto;
     padding: 0;
     padding-top: 25px;
+    border-bottom: none;
   }
 
   .main-header__container {

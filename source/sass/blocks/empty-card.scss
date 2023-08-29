@@ -85,3 +85,35 @@
     width: 250px;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .empty-card {
+    margin-top: 82px;
+    min-height: 429px;
+    background-color: $base-bg-color;
+    padding: 50px 20px 40px 20px;
+    border-top: 1px $additional-bg-color solid;
+  }
+
+  .empty-card__description {
+    width: 170px;
+    margin-bottom: 90px;
+  }
+
+  .empty-card__icon {
+    margin-bottom: 40px;
+  }
+
+  .empty-card__title {
+    margin-bottom: 26px;
+  }
+
+  .empty-card__text {
+    font-size: 16px;
+    line-height: 18px;
+  }
+
+  .empty-card__button {
+    width: 169px;
+  }
+}
