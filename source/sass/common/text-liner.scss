@@ -25,6 +25,7 @@
   }
 
   .text-liner__wrapper::before {
+    position: relative;
     height: 22px;
     width: calc(50% - 384px);
   }

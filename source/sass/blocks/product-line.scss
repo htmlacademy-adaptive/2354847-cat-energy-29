@@ -153,10 +153,13 @@
 
 @media (min-width: $desktop-width) {
   .product-line-wrapper {
-    width: 1220px;
-    margin-bottom: 71px;
+    box-sizing: border-box;
+    width: 1440px;
+    margin: 0 auto;
+    padding: 0 110px 71px 110px;
     flex-direction: row;
     justify-content: space-between;
+    gap: 80px;
   }
 
   .product-line__item {

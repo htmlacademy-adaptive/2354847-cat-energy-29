@@ -50,15 +50,32 @@
 
 @media (min-width: $desktop-width) {
   .main-header {
-    // position: relative;
-    width: 1220px;
+    position: relative;
+    width: 1440px;
     min-height: 59px;
     margin: 0 auto;
     padding: 0;
     padding-top: 55px;
+    background: transparent;
+  }
+
+  .main-header::before {
+    content: "";
+    position: absolute;
+    top: -55px;
+    right: 0;
+    z-index: -1;
+    width: 720px;
+    height: 694px;
+    background-image: linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), url("../img/index/jpeg/hero-background.jpg");
+    background-position: center, center;
+    background-repeat: no-repeat, no-repeat;
+    background-size: cover;
   }
 
   .main-header__container {
+    width: 1220;
+    margin: 0 110px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;

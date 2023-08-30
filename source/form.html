@@ -77,9 +77,11 @@
             </label></li>
         </ul>
       </fieldset>
-      <div class="text-liner__wrapper">
-      <h2 class="form__subtitle">Контактные данные (владельца кота)</h2>
       </div>
+      <div class="text-liner__wrapper">
+      <h2 class="form__subtitle form__subtitle--contact">Контактные данные (владельца кота)</h2>
+      </div>
+      <div class="form-container">
       <fieldset class="form__fieldset form__contacts form-fieldset">
         <ul class="form__list">
           <li class="form__item form__item-radio"><label>
@@ -91,10 +93,16 @@
               <input id="phone" type="tel" name="phone" placeholder="8 (960) 900-60-90" required>
             </label></li>
       </fieldset>
-      <h2 class="form__subtitle">Комментарий</h2>
+    </div>
+      <div class="text-liner__wrapper">
+      <h2 class="form__subtitle">Комментарий</h2></div>
+      <div class="form-container">
       <label>
-        <textarea name="comment" placeholder="Расскажите обо всех повАдках кота" id="message"></textarea></label>
-      <h2 class="form__subtitle">Дополнительно</h2>
+        <textarea name="comment" placeholder="Расскажите обо всех повАдках кота" id="message"></textarea></label></div>
+      <div class="text-liner__wrapper">
+        <h2 class="form__subtitle">Дополнительно</h2>
+      </div>
+      <div class="form-container">
       <fieldset class="form__fieldset form__additional">
         <ul class="form__list form-checkbox">
           <legend class="visually-hidden">Выберите дополнительные товары</legend>
@@ -115,12 +123,13 @@
               витамины
             </label></li>
         </ul>
-
-
       </fieldset>
+      <div class="form__button-wrapper">
       <button class="form__button button primary-button" type="submit"> отправить заявку</button>
       <p class="form__note">* — Обязательные поля</p>
     </div>
+    </div>
+  </div>
     </section>
   <!-- footer -->
   <footer class="footer">

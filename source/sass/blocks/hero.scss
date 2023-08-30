@@ -6,8 +6,9 @@
 .hero__wrapper {
   position: relative;
   box-sizing: border-box;
+  width: 320px;
   min-height: 302px;
-  width: 100%;
+  margin: 0 auto;
   margin-bottom: 137px;
   padding: 27px 35px;
   background-image: linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), url("../img/index/jpeg/hero-background.jpg");
@@ -48,16 +49,17 @@
 @media (min-width: $tablet-width) {
   .hero {
     width: 768px;
+    min-height: 810px;
     margin: 0 auto;
   }
 
   .hero__wrapper {
+    box-sizing: border-box;
     min-height: 180px;
-    width: 768px;
+    width: 708px;
+    padding: 65px 90px 0 90px;
     margin: 0;
     margin-bottom: 50px;
-    padding: 0;
-    padding-left: 120px;
     background-image: none;
     background-color: $base-bg-color;
     text-align: start;
@@ -65,11 +67,13 @@
   }
 
   .hero__title {
-    width: 414px;
-    font-size: 50px;
+    width: 420px;
+    font-size: 60px;
     line-height: 60px;
     font-weight: 400;
+    // margin-left: 120px;
     margin-bottom: 40px;
+    padding: 0;
   }
 
   .hero__slogan {
@@ -80,19 +84,65 @@
 
   .hero__img {
     position: absolute;
-    top: 360px;
+    width: auto;
+    height: 609px;
+    top: 570px;
     left: 50%;
-
   }
 
   .hero__button {
     position: relative;
     z-index: 2;
     width: 244px;
-    margin: 0 0 526px 120px;
+    margin: 0 0 526px 90px;
   }
 }
 
 @media (min-width: $desktop-width) {
+  .hero {
+    width: 1220px;
+    margin: 0 auto;
+    min-height: 470px;
+  }
 
+  .hero__wrapper {
+    min-height: 180px;
+    width: 768px;
+    margin: 0;
+    padding: 0;
+    padding-left: 80px;
+    background: transparent;
+    text-align: start;
+    color: $base-text-color;
+  }
+
+  .hero__title {
+    width: 414px;
+    font-size: 50px;
+    line-height: 60px;
+    font-weight: 400;
+    margin: 110px 0 40px 0;
+  }
+
+  .hero__slogan {
+    font-size: 20px;
+    line-height: 20px;
+    text-transform: uppercase;
+    margin-bottom: 52px;
+  }
+
+  .hero__img {
+    position: absolute;
+    width: 552px;
+    height: 500px;
+    top: 150px;
+    left: 740px;
+  }
+
+  .hero__button {
+    position: relative;
+    z-index: 2;
+    width: 244px;
+    margin: 0 0 526px 80px;
+  }
 }
