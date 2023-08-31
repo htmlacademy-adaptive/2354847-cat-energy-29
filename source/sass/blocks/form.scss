@@ -227,6 +227,7 @@ textarea {
     flex-direction: row;
     flex-wrap: wrap;
     gap: 32px;
+    justify-content: start;
   }
 
   .form__button-wrapper {
@@ -277,5 +278,9 @@ textarea {
 
   .form__fieldset {
     margin-bottom: 70px;
+  }
+
+  .form-checkbox {
+    gap: 0;
   }
 }
