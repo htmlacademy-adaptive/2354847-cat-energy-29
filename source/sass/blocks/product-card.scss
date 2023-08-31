@@ -84,6 +84,11 @@
     margin-bottom: 22px;
   }
 
+  .product-card__img {
+    width: 80%;
+    height: 80%;
+  }
+
   .product-card__description {
     align-items: center;
     min-height: 152px;
@@ -125,6 +130,8 @@
   .product-card__button {
     width: 250px;
   }
+
+
 }
 
 @media (min-width: $desktop-width) {
