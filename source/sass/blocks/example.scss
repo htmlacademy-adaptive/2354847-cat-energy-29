@@ -35,7 +35,7 @@
   height: 56px;
   padding-top: 14px;
   margin-bottom: 20px;
-  border: 1px #444444 solid;
+  border: 1px $special-grey solid;
   border-radius: 3px;
   text-align: center;
   display: flex;
@@ -53,10 +53,12 @@
 }
 
 .example__description {
+  display: block;
   box-sizing: border-box;
   width: 85px;
   z-index: 2;
   padding: 0 6px;
+  margin: 0 auto;
   color: $addithional-text-color;
   font-size: 12px;
   font-family: $Lato;
@@ -75,6 +77,11 @@
   text-transform: uppercase;
   line-height: 20px;
   text-align: center;
+}
+
+.example__foto {
+  display: block;
+  margin: 0 auto;
 }
 
 @media (min-width: $tablet-width) {
@@ -100,12 +107,21 @@
     line-height: 24px;
   }
 
+  .example__facts {
+    width: 708px;
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+  }
+
   .example__list {
     width: 367px;
+    margin-right: 10px;
     margin-bottom: 99px;
   }
 
   .example__item {
+    display: inline;
     box-sizing: border-box;
     width: 162px;
     height: 72px;
@@ -122,12 +138,25 @@
 
   .example__description {
     box-sizing: border-box;
-    width: 125px;
+    width: 140px;
     z-index: 2;
     padding: 0 6px;
     font-size: 14px;
     line-height: 14px;
     background-color: $base-bg-color;
+  }
+
+  .example__cost {
+    width: 174px;
+    margin-top: 20px;
+    font-size: 20px;
+    line-height: 20px;
+    text-align: end;
+  }
+
+  .example__slider {
+    display: block;
+    margin: 0 auto;
   }
 }
 
@@ -138,14 +167,47 @@
     min-height: 594px;
     margin: 0 auto;
     padding: 0 110px 75px 110px;
+    border-top: none;
+    background: linear-gradient(to top, $additional-bg-color, $additional-bg-color 462px, #ffffff 462px, #ffffff 100%);
+    display: grid;
+    grid-template-columns: auto 560px;
+    // grid-template-rows: 100px 100px 100px;
+    grid-template-areas:
+      "title slider"
+      "intro slider"
+      "facts slider";
   }
 
   .example__title {
     margin-bottom: 146px;
+    grid-area: title;
   }
 
   .example__intro {
     width: 433px;
     margin-bottom: 69px;
+    grid-area: intro;
+  }
+
+  .example__facts {
+    flex-direction: column;
+    grid-area: facts;
+  }
+
+  .example__list {
+    margin: 0;
+    margin-bottom: 55px;
+  }
+
+  .example__description {
+    background-color: $additional-bg-color;
+  }
+
+  .example__cost {
+    width: auto;
+  }
+
+  .example__slider {
+    grid-area: slider;
   }
 }

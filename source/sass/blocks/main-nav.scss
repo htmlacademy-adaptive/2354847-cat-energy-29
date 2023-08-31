@@ -21,9 +21,6 @@
   box-shadow: 0 8px 0 0 $base-text-color, 0 16px 0 0 $base-text-color;
 }
 
-// .main-nav--closed .main-nav__toggle:active::before {
-
-// }
 .main-nav--opened .main-nav__toggle {
   content: "";
   position: absolute;
@@ -149,10 +146,8 @@
     flex-wrap: wrap;
     justify-content: start;
     align-items: center;
-    // gap: 33px;
     margin: 0;
     font-size: 20px;
-
     line-height: 30px;
     background: transparent;
   }
@@ -160,13 +155,15 @@
   .main-nav__item {
     margin: 0 auto;
     margin-bottom: 10px;
+  }
 
+  .main-header--index .main-nav__item {
     a {
-      color: $base-bg-color;
+      color: #ffffff;
     }
   }
 
-  .main-nav__item--current {
+  .main-header--index .main-nav__item--current {
     border-bottom: 1px $base-bg-color solid;
   }
 }

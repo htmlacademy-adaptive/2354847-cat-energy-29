@@ -59,7 +59,8 @@
     background: transparent;
   }
 
-  .main-header::before {
+
+  .main-header--index::before {
     content: "";
     position: absolute;
     top: -55px;
@@ -67,7 +68,7 @@
     z-index: -1;
     width: 720px;
     height: 694px;
-    background-image: linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), url("../img/index/jpeg/hero-background.jpg");
+    background-image: linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), url("../img/index/jpeg/index-hero-background.jpg");
     background-position: center, center;
     background-repeat: no-repeat, no-repeat;
     background-size: cover;

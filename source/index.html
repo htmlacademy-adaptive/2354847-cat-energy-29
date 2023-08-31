@@ -10,7 +10,7 @@
 
 <body class="page-body">
   <!-- header -->
- <header class="main-header">
+ <header class="main-header main-header--index">
   <div class="main-header__container">
   <a class="main-header__logo">
     <img class="logo__img" src="img/index/svg/logo-image.svg" width="33" height="38" alt="Логотип Cat energy.">
@@ -22,9 +22,9 @@
       </button>
     <div class="main-nav__wrapper main-nav--opened">
       <ul class="main-nav__list nav-list">
-        <li class="main-nav__item main-nav__item--current"><a href="#">главная</a></li>
-        <li class="main-nav__item"><a href="#">каталог продукции</a></li>
-        <li class="main-nav__item"><a href="#">подбор программы</a></li>
+        <li class="main-nav__item main-nav__item--current"><a href="../source/index.html">главная</a></li>
+        <li class="main-nav__item"><a href="../source/catalog.html">каталог продукции</a></li>
+        <li class="main-nav__item"><a href="../source/form.html">подбор программы</a></li>
       </ul>
     </div>
   </nav>
@@ -121,22 +121,22 @@
         <p class="example__intro">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim.
           Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16
           часов в день.</p>
-        <div class="example__list">
-          <div class="example__item">
-            <dt class="example__number">5 КГ</dt>
-            <dd class="example__description">снижение веса</dd>
-          </div>
-          <div class="example__item">
-            <dt class="example__number">60 ДНЕЙ</dt>
-            <dd class="example__description">затрачено времени</dd>
-          </div>
+        <div class="example__facts">
+            <div class="example__list">
+              <div class="example__item">
+                <dt class="example__number">5 КГ</dt>
+                <dd class="example__description">снижение веса</dd>
+              </div>
+              <div class="example__item">
+                <dt class="example__number">60 ДНЕЙ</dt>
+                <dd class="example__description">затрачено времени</dd>
+              </div>
+            </div>
+            <span class="example__cost">Затраты на питание: 15 000 РУБ.</span>
         </div>
-        <span class="example__cost">Затраты на питание: 15 000 РУБ.</span>
-        <div class="example__slider slider-list ">
-          <img class="example__foto slider-item" src="img/index/png/cat_before.png" width="280" height="256"
-            alt="Фото до приема продукта.">
-          <img class="example__foto slider-item" src="img/index/png/cat_after.png" width="280" height="256"
-            alt="Фото после приема продукта.">
+        <div class="example__slider">
+          <img class="example__foto slider-item" src="img/index/png/compare-slider.png" width="280" height="256"
+            alt="Фото до и после приема продукта.">
         </div>
       </div>
     </section>
