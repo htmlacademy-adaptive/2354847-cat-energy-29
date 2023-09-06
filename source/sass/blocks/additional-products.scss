@@ -65,9 +65,10 @@
   margin-top: 35px;
   min-height: 290px;
   padding-top: 58px;
-  background-image: linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), url("../img/catalog/png/gift_background.png");
+  background-image: linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), url("/source/img/catalog/png/gift-background.png");
   background-position: center, center;
   background-repeat: no-repeat, no-repeat;
+  background-size: cover, cover;
   display: flex;
   flex-direction: column;
   gap: 48px;
@@ -135,7 +136,7 @@
     min-height: 200px;
     padding: 0;
     padding-left: 77px;
-    background-size: cover;
+    background-image: linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), url("/source/img/catalog/png/gift-background-large.png");
     flex-direction: row;
     gap: 264px;
   }
@@ -200,9 +201,10 @@
     min-height: 288px;
     height: 100%;
     padding: 0;
-    background-image: linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), url("../img/catalog/png/gift_background.png");
+    background-image: linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), url("/source/img/catalog/png/gift-background.png");
     background-position: center, center;
     background-repeat: no-repeat, no-repeat;
+    background-size: cover, cover;
     flex-direction: column;
     justify-content: center;
     gap: 46px;

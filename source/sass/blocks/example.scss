@@ -1,9 +1,13 @@
 .example-wrapper {
+  width: 100%;
+  background-color: #eaeaea;
+}
+
+.example__container {
   box-sizing: border-box;
   width: 320px;
   margin: 0 auto;
   padding: 25px 20px 40px 20px;
-  background-color: #eaeaea;
 }
 
 .example__title {
@@ -50,6 +54,7 @@
   font-family: $Oswald;
   font-weight: 400;
   line-height: 24px;
+  text-transform: uppercase;
 }
 
 .example__description {
@@ -86,13 +91,16 @@
 
 @media (min-width: $tablet-width) {
   .example-wrapper {
+    border-top: 1px #e6e6e6 solid;
+    background: linear-gradient(to top, #eaeaea, #eaeaea 462px, #ffffff 462px, #ffffff 100%);
+  }
+
+  .example__container {
     box-sizing: border-box;
     width: 768px;
     min-height: 1081px;
     margin: 0 auto;
     padding: 45px 30px 101px 30px;
-    border-top: 1px #e6e6e6 solid;
-    background: linear-gradient(to top, #eaeaea, #eaeaea 462px, #ffffff 462px, #ffffff 100%);
   }
 
   .example__title {
@@ -162,13 +170,17 @@
 
 @media (min-width: $desktop-width) {
   .example-wrapper {
+    border-top: none;
+    background: linear-gradient(to top, $additional-bg-color, $additional-bg-color 462px, #ffffff 462px, #ffffff 100%);
+  }
+
+  .example__container {
     box-sizing: border-box;
     width: 1440px;
     min-height: 594px;
     margin: 0 auto;
     padding: 0 110px 75px 110px;
-    border-top: none;
-    background: linear-gradient(to top, $additional-bg-color, $additional-bg-color 462px, #ffffff 462px, #ffffff 100%);
+
     display: grid;
     grid-template-columns: auto 560px;
     // grid-template-rows: 100px 100px 100px;

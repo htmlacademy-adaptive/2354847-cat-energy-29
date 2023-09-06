@@ -1,12 +1,13 @@
 .hero {
-  width: 320px;
+  width: 100%;
   margin: 0 auto;
 }
 
 .hero__wrapper {
   position: relative;
   box-sizing: border-box;
-  width: 320px;
+  width: 100%;
+  min-width: 320px;
   min-height: 302px;
   margin: 0 auto;
   margin-bottom: 137px;
@@ -14,7 +15,7 @@
   background-image: linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), url("../img/index/jpeg/hero-background.jpg");
   background-position: center, center;
   background-repeat: no-repeat, no-repeat;
-  background-size: cover;
+  background-size: cover, contain;
   text-align: center;
   color: #ffffff;
   font-family: "Oswald", sans-serif;
@@ -22,6 +23,8 @@
 }
 
 .hero__title {
+  width: 250px;
+  margin: 0 auto;
   font-size: 36px;
   line-height: 36px;
   font-weight: 400;
@@ -29,6 +32,8 @@
 }
 
 .hero__slogan {
+  width: 250px;
+  margin: 0 auto;
   font-size: 14px;
   line-height: 14px;
   text-transform: uppercase;
@@ -72,15 +77,18 @@
     font-size: 60px;
     line-height: 60px;
     font-weight: 400;
-    // margin-left: 120px;
+    margin-left: 0;
     margin-bottom: 40px;
     padding: 0;
   }
 
   .hero__slogan {
+    width: 283px;
     font-size: 20px;
     line-height: 20px;
+    margin-left: 0;
     text-transform: uppercase;
+    text-align: start;
   }
 
   .hero__img {
@@ -101,15 +109,16 @@
 
 @media (min-width: $desktop-width) {
   .hero {
-    width: 1220px;
+    width: 1440px;
     margin: 0 auto;
     min-height: 470px;
   }
 
   .hero__wrapper {
+    box-sizing: border-box;
     min-height: 180px;
-    width: 768px;
-    margin: 0;
+    width: 1220px;
+    margin: 0 auto;
     padding: 0;
     padding-left: 80px;
     background: transparent;
@@ -144,6 +153,6 @@
     position: relative;
     z-index: 2;
     width: 244px;
-    margin: 0 0 526px 80px;
+    margin: 0 0 526px 190px;
   }
 }
