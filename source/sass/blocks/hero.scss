@@ -39,18 +39,37 @@
   text-transform: uppercase;
 }
 
-.hero__img {
-  position: absolute;
-  top: 100%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
-
 .hero__button {
   width: 280px;
   margin: 0 auto;
   margin-bottom: 20px;
 }
+
+.hero__img-container {
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 280px;
+  height: 270px;
+
+  @media (min-width: $tablet-width) {
+    position: absolute;
+    width: 709px;
+    height: 609px;
+    top: 570px;
+    left: 50%;
+  }
+
+  @media (min-width: $desktop-width) {
+    position: absolute;
+    width: 552px;
+    height: 500px;
+    top: 150px;
+    left: 740px;
+  }
+}
+
 
 @media (min-width: $tablet-width) {
   .hero {
@@ -89,14 +108,6 @@
     margin-left: 0;
     text-transform: uppercase;
     text-align: start;
-  }
-
-  .hero__img {
-    position: absolute;
-    width: auto;
-    height: 609px;
-    top: 570px;
-    left: 50%;
   }
 
   .hero__button {
@@ -139,14 +150,6 @@
     line-height: 20px;
     text-transform: uppercase;
     margin-bottom: 52px;
-  }
-
-  .hero__img {
-    position: absolute;
-    width: 552px;
-    height: 500px;
-    top: 150px;
-    left: 740px;
   }
 
   .hero__button {

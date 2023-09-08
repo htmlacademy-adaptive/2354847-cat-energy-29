@@ -6,14 +6,24 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Cat Energy</title>
   <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" href="favicon.ico">
+  <link rel="icon" href="img/favicons/favicon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="img/favicons/favicon-180.png">
+  <link rel="manifest" href="manifest.webmanifest">
 </head>
 
 <body class="page-body">
   <!-- header -->
  <header class="main-header">
   <div class="main-header__container">
-  <a class="main-header__logo">
-    <img class="logo__img" src="img/index/svg/logo-image.svg" width="33" height="38" alt="Логотип Cat energy.">
+    <a class="main-header__logo">
+      <div class="logo__container">
+        <picture>
+          <source media="(min-width: 1200px)" srcset="img/index/svg/logo-image-desktop.svg" width="70" height=" 59">
+          <source media="(min-width: 768px)" srcset="img/index/svg/logo-image-tablet.svg" width="60" height=" 50">
+          <img class="logo__img" src="img/index/svg/logo-image-mobile.svg" width="33" height="38" alt="Логотип Cat energy.">
+        </picture>
+      </div>
     <img class="logo__text logo__text--header" src="img/index/svg/logo-text.svg" width="101" height="18" alt="Cat energy">
   </a>
   <nav class="main-nav main-nav--opened">
@@ -33,8 +43,8 @@
   <main class="main-container">
     <!-- form -->
     <section class="form">
+      <form class="form-to-send" action="https://echo.htmlacademy.ru/" method="get"></form>
       <div class="form-container">
-        <form class="form-to-send" action="https://echo.htmlacademy.ru/" method="get">
         <div class="form__preface">
           <h1 class="form__title">Подбор&nbsp;программы</h1>
           <p class="form__description">Заполните анкету, и мы подберем
@@ -147,15 +157,17 @@
     <div class="footer-wrapper--contacts">
         <!-- contacts -->
         <section class="contacts">
-        <div class="contacts-container">
-        <h2 class="visually-hidden">Контакты</h2>
-          <div class="contacts-container-text">
-            <p class="contacts__title">приглашаем к сотрудничеству дилеров!</p>
-            <p class="contacts__adress">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
+          <div class="contacts-container">
+          <h2 class="visually-hidden">Контакты</h2>
+            <div class="contacts-container-text">
+              <p class="contacts__title">приглашаем к сотрудничеству дилеров!</p>
+              <p class="contacts__adress">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
+            </div>
+            <div class="contacts__map">
+              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.603787672859!2d30.320472477602937!3d59.93871647491515!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCDQoNC-0YHRgdC40Y8sIDE5MTE4Ng!5e0!3m2!1sru!2str!4v1694009995612!5m2!1sru!2str" style="border: 0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
           </div>
-          <div class="contacts__map map"></div>
-        </div>
-        </section>
+          </section>
   </div>
   <!-- footer-navigation -->
   <section class="footer-navigation">
