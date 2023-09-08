@@ -1,14 +1,16 @@
 .main-header {
-  position: relative;
-  width: 280px;
-  min-height: 65px;
-  box-sizing: border-box;
-  margin: 0 auto;
-  padding-top: 13px;
-  background-color: #ffffff;
+  width: 100%;
 }
 
 .main-header__container {
+  box-sizing: border-box;
+  position: relative;
+  width: 320px;
+  min-height: 65px;
+  margin: 0 auto;
+  padding: 13px 20px 0 20px;
+  background-color: #ffffff;
+  border-bottom: 1px #e6e6e6 solid;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -28,16 +30,14 @@
 }
 
 @media (min-width: $tablet-width) {
-  .main-header {
+  .main-header__container {
     position: relative;
-    width: 704px;
+    width: 708px;
     min-height: 50px;
     margin: 0 auto;
     padding: 0;
     padding-top: 25px;
-  }
-
-  .main-header__container {
+    border-bottom: none;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -48,10 +48,42 @@
 @media (min-width: $desktop-width) {
   .main-header {
     position: relative;
-    width: 1220px;
+  }
+
+  .main-header__container {
+    position: relative;
+    width: 1440px;
     min-height: 59px;
     margin: 0 auto;
-    padding: 0;
-    padding-top: 55px;
+    padding: 55px 110px 0 110px;
+    background: transparent;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .main-header--index::before {
+    content: "";
+    position: absolute;
+    top: -55px;
+    z-index: -1;
+    width: 100%;
+    height: 694px;
+    background-image: linear-gradient(to right, transparent, transparent 50%, rgba(104, 183, 56, 0.85) 50%, rgba(104, 183, 56, 0.85));
+    background-repeat: no-repeat, no-repeat;
+  }
+
+  .main-header--index::after {
+    content: "";
+    width: 720px;
+    height: 694px;
+    position: absolute;
+    top: -55px;
+    left: 50%;
+    background-image: url("/source/img/index/jpeg/index-hero-background.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: -2;
   }
 }

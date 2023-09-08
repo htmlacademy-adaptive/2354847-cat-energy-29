@@ -1,5 +1,19 @@
-.footer-container {
+.footer-wrapper--contacts-main {
+  background-color: $base-bg-color;
+  width: 100%;
+}
+
+.footer-wrapper--contacts {
   background-color: $additional-bg-color;
+  width: 100%;
+}
+
+.footer-wrapper--navigation {
+  background-color: $additional-bg-color;
+  width: 100%;
+}
+
+.footer-container {
   width: 320px;
   margin: 0 auto;
 }
@@ -11,6 +25,10 @@
 }
 
 @media (min-width: $desktop-width) {
+  .footer-wrapper--contacts-main {
+    background-color: $additional-bg-color;
+  }
+
   .footer-container {
     width: 1440px;
   }
