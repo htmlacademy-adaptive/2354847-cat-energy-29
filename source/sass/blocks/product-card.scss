@@ -23,6 +23,11 @@
   justify-content: center;
 }
 
+.product-card__img-wrapper picture {
+  display: block;
+}
+
+
 .product-card__img {
   display: block;
 }
@@ -82,11 +87,6 @@
     width: 200px;
     height: 210px;
     margin-bottom: 22px;
-  }
-
-  .product-card__img {
-    width: 80%;
-    height: 80%;
   }
 
   .product-card__description {

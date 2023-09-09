@@ -6,14 +6,25 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Cat Energy</title>
   <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" href="favicon.ico">
+  <link rel="icon" href="img/favicons/favicon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="img/favicons/favicon-180.png">
+  <link rel="manifest" href="manifest.webmanifest">
+
 </head>
 
 <body class="page-body">
   <!-- header -->
  <header class="main-header main-header--index">
   <div class="main-header__container">
-  <a class="main-header__logo">
-    <img class="logo__img" src="img/index/svg/logo-image.svg" width="33" height="38" alt="Логотип Cat energy.">
+    <a class="main-header__logo">
+      <div class="logo__container">
+        <picture>
+          <source media="(min-width: 1200px)" srcset="img/index/svg/logo-image-desktop.svg" width="70" height=" 59">
+          <source media="(min-width: 768px)" srcset="img/index/svg/logo-image-tablet.svg" width="60" height=" 50">
+          <img class="logo__img" src="img/index/svg/logo-image-mobile.svg" width="33" height="38" alt="Логотип Cat energy.">
+        </picture>
+      </div>
     <img class="logo__text logo__text--header" src="img/index/svg/logo-text.svg" width="101" height="18" alt="Cat energy">
   </a>
   <nav class="main-nav main-nav--opened">
@@ -33,11 +44,17 @@
   <main class="main-container">
     <!-- hero -->
     <section class="hero">
-      <div class="hero__wrapper">
-      <h1 class="hero__title hero-title">Функциональное питание для котов</h1>
-      <p class="hero__slogan">Занялся собой? Займись котом!</p>
-      <img class="hero__img" src="img/index/png/hero-can-foto.png" width="280" height="270"
-        alt="Изображение товара.">
+        <div class="hero__wrapper">
+          <h1 class="hero__title hero-title">Функциональное питание для котов</h1>
+          <p class="hero__slogan">Занялся собой? Займись котом!</p>
+          <div class="hero__img-container">
+            <picture>
+              <source media="(min-width: 1200px)" srcset="img/index/png/hero-can-photo-desktop.png 1x, img/index/png/hero-can-photo-desktop@2x.png 2x" width="552" height="499">
+              <source media="(min-width: 768px)" srcset="img/index/png/hero-can-photo-tablet.png 1x, img/index/png/hero-can-photo-tablet@2x.png 2x" width="709" height="609">
+            <img class="hero__img" src="img/index/png/hero-can-photo-mobile.png" srcset="img/index/png/hero-can-photo-mobile@2x.png 2x" width="280" height="270"
+                    alt="Изображение товара.">
+            </picture>
+            </div>
         </div>
       <button class="hero__button button primary-button" type="submit">подобрать программу</button>
     </section>
@@ -136,8 +153,11 @@
             <span class="example__cost">Затраты на питание: 15 000 руб.</span>
         </div>
         <div class="example__slider">
-          <img class="example__foto slider-item" src="img/index/png/compare-slider.png" width="280" height="256"
-            alt="Фото до и после приема продукта.">
+          <picture>
+            <source media="(min-width: 768px)" srcset="img/index/png/compare-slider-tablet.png 1x, img/index/png/compare-slider-tablet@2x.png 2x" width="560" height="512">
+<img class="example__foto" src="img/index/png/compare-slider-mobile.png" srcset="img/index/png/compare-slider-mobile@2x.png 2x" width="280" height="256"
+          alt="Фото до и после приема продукта.">
+          </picture>
         </div>
       </div>
     </div>
