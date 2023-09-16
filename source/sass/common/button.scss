@@ -14,6 +14,16 @@
 
 .primary-button {
   background-color: $accent-color;
+
+  &:hover,
+  &:active {
+    background-color: rgb(95, 172, 47);
+    color: rgb(100%, 100%, 100%, 0.3);
+  }
+
+  &:active text {
+    opacity: 0.3;
+  }
 }
 
 .secondary-button {

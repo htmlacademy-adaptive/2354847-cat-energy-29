@@ -77,11 +77,13 @@
 }
 
 .additional-products__bonus-description {
+  width: 161px;
   color: #ffffff;
   font-size: 16px;
   font-family: $Lato;
   font-weight: 400;
   line-height: 20px;
+  text-align: center;
 }
 
 @media (min-width: $tablet-width) {
@@ -142,7 +144,7 @@
   }
 
   .additional-products__bonus-description {
-    width: 161px;
+    text-align: left;
   }
 }
 
