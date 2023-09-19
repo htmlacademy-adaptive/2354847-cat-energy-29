@@ -15,7 +15,7 @@
   content: "";
   width: 128px;
   height: 24px;
-  mask-image: url("../img/sprite.svg#logo__text");
+  mask-image: url("img/sprite.svg#logo--text");
   background-size: cover;
   background-color: $base-text-color;
 
@@ -44,7 +44,7 @@
   content: "";
   width: 27px;
   height: 34px;
-  mask-image: url("../img/sprite.svg#copyright-icon");
+  mask-image: url("img/sprite.svg#copyright--icon");
   background-size: cover;
   background-color: #666666;
 

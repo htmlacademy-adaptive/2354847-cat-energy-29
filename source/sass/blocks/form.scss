@@ -138,7 +138,7 @@
 }
 
 .control-input[type="radio"]:checked + .radio-mark {
-  background-image: url("/source/img/form/svg/radio-button.svg");
+  background-image: url("/img/form/svg/radio-button.svg");
   background-position: center;
   background-repeat: no-repeat;
   z-index: 1;
@@ -160,7 +160,7 @@
 }
 
 .control-input[type="checkbox"]:checked + .control-mark {
-  background-image: url("/source/img/form/svg/checkbox-button.svg");
+  background-image: url("/img/form/svg/checkbox-button.svg");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
