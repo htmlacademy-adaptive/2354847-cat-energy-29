@@ -158,23 +158,24 @@ gulp.parallel(
   sprite,
   createWebp
   ),
-  );
+  )
+
 
 // Default
 
 export default gulp.series(
-clean,
-copy,
-copyImages,
-gulp.parallel(
-styles,
-html,
-scripts,
-svg,
-sprite,
-createWebp
-),
-gulp.series(
-server,
-watcher
-));
+  clean,
+  copy,
+  copyImages,
+  gulp.parallel(
+  styles,
+  html,
+  scripts,
+  svg,
+  sprite,
+  createWebp
+  ),
+  gulp.series(
+  server,
+  watcher
+  ));

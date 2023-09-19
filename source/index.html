@@ -20,8 +20,8 @@
     <a class="main-header__logo">
       <div class="logo__container">
         <picture>
-          <source media="(min-width: 1200px)" srcset="img/index/svg/logo-image-desktop.svg" width="70" height=" 59">
-          <source media="(min-width: 768px)" srcset="img/index/svg/logo-image-tablet.svg" width="60" height=" 50">
+          <source media="(min-width: 1200px)" srcset="img/index/svg/logo-image-desktop.svg" width="70" height="59">
+          <source media="(min-width: 768px)" srcset="img/index/svg/logo-image-tablet.svg" width="60" height="50">
           <img class="logo__img" src="img/index/svg/logo-image-mobile.svg" width="33" height="38" alt="Логотип Cat energy.">
         </picture>
       </div>
@@ -144,21 +144,31 @@
           часов в день.</p>
         <div class="example__facts">
             <div class="example__list">
-              <div class="example__item">
+              <dl class="example__item">
                 <dt class="example__number">5 кг</dt>
                 <dd class="example__description">снижение веса</dd>
-              </div>
-              <div class="example__item">
+              </dl>
+              <dl class="example__item">
                 <dt class="example__number">60 дней</dt>
                 <dd class="example__description">затрачено времени</dd>
-              </div>
+              </dl>
             </div>
             <span class="example__cost">Затраты на питание: 15 000 руб.</span>
         </div>
         <div class="example__slider">
           <div class="example__slider-box">
             <button class="example__slider-button">
-                          </button>
+              <svg class="example__slider--icon" width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <g id="thumb">
+                <rect x="1" y="1" width="38" height="38" rx="19" fill="white"/>
+                <g id="Vector">
+                <path d="M16 11L8 20L16 29V11Z" fill="currentColor"/>
+                <path d="M32 20L24 11V29L32 20Z" fill="currentColor"/>
+                </g>
+                <rect x="1" y="1" width="38" height="38" rx="19" stroke="currentColor" stroke-width="2"/>
+                </g>
+                </svg>
+            </button>
           </div>
         </div>
       </div>
@@ -186,6 +196,7 @@
   <section class="footer-navigation">
     <div class="footer-wrapper--navigation">
       <div class="footer-navigation-container">
+        <h2 class="visually-hidden">Ссылки для навигации</h2>
           <div class="footer-navigation__logo">
               <a class="footer-navigation__logo">
                 <div class="footer-navigation-logo__text--icon footer-link__icon"></div>
