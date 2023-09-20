@@ -17,14 +17,14 @@
  <header class="main-header">
   <div class="main-header__container">
     <a class="main-header__logo">
-      <div class="logo__container">
+      <div class="main-header__logo-img-container">
         <picture>
-          <source media="(min-width: 1200px)" srcset="img/index/svg/logo-image-desktop.svg" width="70" height=" 59">
-          <source media="(min-width: 768px)" srcset="img/index/svg/logo-image-tablet.svg" width="60" height=" 50">
-          <img class="logo__img" src="img/index/svg/logo-image-mobile.svg" width="33" height="38" alt="Логотип Cat energy.">
+          <source media="(min-width: 1200px)" srcset="img/index/svg/logo-image-desktop.svg" width="70" height="59">
+          <source media="(min-width: 768px)" srcset="img/index/svg/logo-image-tablet.svg" width="60" height="50">
+          <img class="main-header__logo-img" src="img/index/svg/logo-image-mobile.svg" width="33" height="38" alt="Логотип Cat energy.">
         </picture>
       </div>
-    <img class="logo__text logo__text--header" src="img/index/svg/logo-text.svg" width="101" height="18" alt="Cat energy">
+    <img class="main-header__logo-text" src="img/index/svg/logo-text.svg" width="101" height="18" alt="Cat energy.">
   </a>
   <nav class="main-nav main-nav--opened">
     <button class="main-nav__toggle menu-toggle" type="button"><span class="visually-hidden">Открыть
@@ -32,9 +32,9 @@
       </button>
     <div class="main-nav__wrapper">
       <ul class="main-nav__list nav-list">
-        <li class="main-nav__item main-nav__item--current"><a href="#">главная</a></li>
-        <li class="main-nav__item"><a href="#">каталог продукции</a></li>
-        <li class="main-nav__item"><a href="#">подбор программы</a></li>
+        <li class="main-nav__item"><a href="/index.html">главная</a></li>
+        <li class="main-nav__item"><a href="/catalog.html">каталог продукции</a></li>
+        <li class="main-nav__item main-nav__item--current"><a href="/form.html">подбор программы</a></li>
       </ul>
     </div>
   </nav>
@@ -43,7 +43,7 @@
   <main class="main-container">
     <!-- form -->
     <section class="form">
-      <form class="form-to-send" action="https://echo.htmlacademy.ru/" method="get"></form>
+      <form class="form-to-send" action="https://echo.htmlacademy.ru/" method="get">
       <div class="form-container">
         <div class="form__preface">
           <h1 class="form__title">Подбор&nbsp;программы</h1>
@@ -72,11 +72,10 @@
                 </label>
               </li>
             </ul>
-
         </fieldset>
         <fieldset class="form__fieldset form__fieldset--radio">
+          <legend class="visually-hidden">Выберите программу питания</legend>
           <ul class="form__list form-radio">
-            <legend class="visually-hidden">Выберите программу питания</legend>
             <li class="form__item--radio"><label class="control">
                 <input class="control-input visually-hidden" type="radio" name="programm" checked>
                 <span class="radio-mark"></span>
@@ -124,8 +123,8 @@
       </div>
         <div class="form-container">
             <fieldset class="form__fieldset form__additional">
+              <legend class="visually-hidden">Выберите дополнительные товары</legend>
               <ul class="form__list form-checkbox">
-                <legend class="visually-hidden">Выберите дополнительные товары</legend>
                 <li class="form__item--checkbox"><label>
                     <input class="control-input visually-hidden" type="checkbox" name="sugar" checked>
                     <span class="control-mark"></span>
@@ -153,12 +152,12 @@
               <p class="form__note">* — Обязательные поля</p>
             </div>
           </div>
-    </form>
+        </form>
     </section>
     </main>
   <!-- footer -->
   <footer class="footer">
-    <div class="footer-wrapper--contacts">
+    <div class="footer__contacts-wrapper">
         <!-- contacts -->
         <section class="contacts">
           <div class="contacts-container">
@@ -171,18 +170,18 @@
               <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.603787672859!2d30.320472477602937!3d59.93871647491515!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCDQoNC-0YHRgdC40Y8sIDE5MTE4Ng!5e0!3m2!1sru!2str!4v1694009995612!5m2!1sru!2str" style="border: 0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
             </div>
           </div>
-          </section>
+      </section>
   </div>
    <!-- footer-navigation -->
    <section class="footer-navigation">
-    <div class="footer-wrapper--navigation">
-    <div class="footer-navigation-container">
+    <div class="footer-navigation__wrapper">
+    <div class="footer-navigation__container">
       <h2 class="visually-hidden">Ссылки для навигации</h2>
-    <div class="footer-navigation__logo">
-      <a class="footer-navigation__logo">
-        <div class="footer-navigation-logo__text--icon footer-link__icon"></div>
-    </a>
-  </div>
+      <div class="footer-navigation__logo-container">
+        <a class="footer-navigation__logo-link">
+          <div class="footer-navigation__logo-text-icon"></div>
+        </a>
+    </div>
      <div class="footer-navigation__social">
       <ul class="social__list">
         <li class="social__item">
