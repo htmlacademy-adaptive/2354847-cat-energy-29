@@ -74,12 +74,6 @@
   width: 280px;
 }
 
-.product-card__features dl,
-.product-card__features dt,
-.product-card__features dd {
-  margin: 0;
-}
-
 @media (min-width: $tablet-width) {
   .product-card {
     box-sizing: border-box;

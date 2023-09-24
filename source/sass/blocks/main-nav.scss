@@ -72,8 +72,6 @@
 
 .main-nav__list {
   display: block;
-  margin: 0;
-  padding: 0;
   list-style: none;
   font-size: 20px;
   font-family: $Oswald;
@@ -130,14 +128,6 @@
     padding-bottom: 22px;
     text-decoration: none;
     color: $base-text-color;
-
-    &:hover {
-      opacity: 0.6;
-    }
-
-    &:active {
-      opacity: 0.3;
-    }
   }
 }
 

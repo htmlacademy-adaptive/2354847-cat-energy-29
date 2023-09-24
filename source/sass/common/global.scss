@@ -11,7 +11,30 @@ body::-webkit-scrollbar {
   width: 0;
 }
 
-.text-title {
+h1,
+h2,
+h3,
+h4 {
   margin: 0;
   padding: 0;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+a {
+  text-decoration: 0;
+}
+
+p {
+  margin: 0;
+}
+
+dl,
+dt,
+dd {
+  margin: 0;
 }

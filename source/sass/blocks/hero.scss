@@ -12,7 +12,7 @@
   margin: 0 auto;
   margin-bottom: 137px;
   padding: 27px 35px;
-  background-image: linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), url("/img/index/png/hero-background-mobile.png");
+  background-image: linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), url("../img/index/jpeg/hero-background.jpg");
   background-position: center, center;
   background-repeat: no-repeat, no-repeat;
   background-size: cover, contain;
@@ -20,13 +20,6 @@
   color: #ffffff;
   font-family: "Oswald", sans-serif;
   font-weight: 400;
-
-  @media (min-resolution: 2dppx) {
-    min-width: 320px;
-    min-height: 302px;
-    background-image: linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), url("/img/index/png/hero-background-mobile@2x.png");
-    background-size: cover, contain;
-  }
 }
 
 .hero__title {
@@ -72,8 +65,8 @@
     position: absolute;
     width: 552px;
     height: 500px;
-    top: 170px;
-    left: 722px;
+    top: 150px;
+    left: 740px;
   }
 }
 
@@ -148,8 +141,8 @@
   }
 
   .hero__title {
-    width: 416px;
-    font-size: 60px;
+    width: 414px;
+    font-size: 50px;
     line-height: 60px;
     font-weight: 400;
     margin: 110px 0 40px 0;

@@ -2,6 +2,7 @@
   display: block;
   // min-width: 192px;
   min-height: 40px;
+  padding: 8px 44px;
   border: none;
   color: $base-bg-color;
   font-size: 16px;
@@ -28,16 +29,6 @@
 .secondary-button {
   background-color: $additional-bg-color;
   color: $addithional-text-color;
-
-  &:hover,
-  &:active {
-    background-color: #f2f2f2;
-    color: rgb(100%, 100%, 100%, 0.3);
-  }
-
-  &:active text {
-    opacity: 0.3;
-  }
 }
 
 .link-button {
