@@ -13,6 +13,12 @@
   margin: 0 auto;
 }
 
+.form__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
 .form__title {
   margin: 27px 20px 37px 20px;
   color: $base-text-color;
@@ -52,8 +58,17 @@
 .form__fieldset {
   margin: 0;
   box-sizing: border-box;
-  padding: 24px 20px;
+  padding: 24px 20px 10px 20px;
   border: none;
+}
+
+
+.form__contacts {
+  padding-top: 35px;
+
+  @media (min-width: $tablet-width) {
+    margin: 76px 0 65px 0;
+  }
 }
 
 .form__fieldset--radio {
@@ -95,6 +110,7 @@
   height: 45px;
   padding: 14px 15px 13px 15px;
   border: 2px #e7e7e7 solid;
+  color: #444444;
   font-size: 16px;
   font-family: $Oswald;
   font-weight: 400;
@@ -103,7 +119,19 @@
 
   @media (min-width: $tablet-width) {
     height: 52px;
+    font-size: 20px;
   }
+}
+
+.form__item-contacts {
+  position: relative;
+}
+
+.form__item-contacts svg {
+  position: absolute;
+  top: 13px;
+  right: 12px;
+  color: #222222;
 }
 
 .form-text input {
@@ -115,11 +143,19 @@
     border: 2px #444444 solid;
   }
 
+  &:focus + svg {
+    color: #68b738;
+  }
+
+
   &:invalid {
     border: 2px #ff8282 solid;
   }
-}
 
+  &:invalid + svg {
+    color: #ff8282;
+  }
+}
 
 .form__item--radio label {
   margin-bottom: 13px;
@@ -158,7 +194,6 @@
   background-repeat: no-repeat;
   z-index: 1;
 }
-// ВОПРОС!!
 
 .control-input[type="radio"]:hover ~ .radio-mark,
 .control-input[type="checkbox"]:hover ~ .control-mark {
@@ -196,7 +231,7 @@
 
 textarea {
   box-sizing: border-box;
-  margin: 27px 20px 23px 20px;
+  margin: 38px 20px 23px 20px;
   padding: 14px 14px;
   width: 280px;
   min-height: 150px;
@@ -207,6 +242,10 @@ textarea {
   font-weight: 400;
   text-transform: uppercase;
   line-height: 18px;
+}
+
+.form__additional {
+  padding-top: 36px;
 }
 
 .form__item--checkbox label {
@@ -230,6 +269,7 @@ textarea {
   margin: 12px 20px 21px 20px;
   width: 280px;
 }
+
 
 .form__note {
   margin-bottom: 32px;
@@ -273,7 +313,6 @@ textarea {
   .form__description {
     width: 325px;
     margin: 0;
-    margin-bottom: 66px;
     font-size: 20px;
     line-height: 30px;
   }
@@ -283,20 +322,29 @@ textarea {
   }
 
   .form__fieldset {
-    margin: 76px 0 65px 0;
+    margin: 66px 0 50px 0;
     padding: 0;
     border: none;
+  }
+
+  .form__contacts {
+    margin: 76px 0 45px 0;
+  }
+
+  .form__item-contacts svg {
+    top: 16px;
+    right: 14px;
   }
 
   .form__fieldset--radio {
     margin: 0;
     margin-bottom: 65px;
-    padding: 23px 27px;
+    padding: 25px 27px;
     border: 1px #d9d9d9 solid;
   }
 
   textarea {
-    margin: 87px 0 65px 0;
+    margin: 87px 0 60px 0;
     padding: 11px 20px;
     width: 628px;
     min-height: 175px;
@@ -308,7 +356,8 @@ textarea {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    gap: 32px;
+    column-gap: 50px;
+    row-gap: 32px;
     justify-content: start;
   }
 
@@ -318,6 +367,10 @@ textarea {
     justify-content: start;
     align-items: center;
     margin-bottom: 60px;
+  }
+
+  .form__additional {
+    margin-top: 58px;
   }
 
   .form__button {
@@ -330,7 +383,7 @@ textarea {
   }
 
   .form__item--checkbox label {
-    width: 298px;
+    width: 289px;
     margin: 0;
     gap: 20px;
   }
@@ -342,6 +395,9 @@ textarea {
 
   .form__note {
     margin-bottom: 0;
+    margin-left: 30px;
+    font-size: 16px;
+    text-align: left;
   }
 }
 
@@ -360,7 +416,7 @@ textarea {
   }
 
   .form__title {
-    margin-top: 77px;
+    margin-top: 74px;
     margin-bottom: 55px;
   }
 
@@ -370,12 +426,12 @@ textarea {
     line-height: 36px;
   }
 
-  .form__discription {
-    margin-bottom: 76px;
+  .form__description {
+    margin-bottom: 66px;
   }
 
   .form__fieldset {
-    margin-bottom: 70px;
+    margin-bottom: 68px;
   }
 
   .form__list--contacts {
@@ -386,7 +442,11 @@ textarea {
     gap: 80px;
   }
 
-  .form__item--contacts {
+  .form__contacts {
+    margin: 76px 0 52px 0;
+  }
+
+  .form__item-contacts {
     width: 570px;
   }
 
@@ -405,6 +465,7 @@ textarea {
   }
 
   textarea {
+    margin: 75px 0 66px 0;
     width: 1220px;
   }
 
@@ -425,6 +486,10 @@ textarea {
   .form__button {
     margin: 0;
     width: 570px;
+  }
+
+  .form__additional {
+    margin: 58px 0;
   }
 
   .form__note {

@@ -240,7 +240,7 @@
     padding-bottom: 75px;
 
     display: grid;
-    grid-template-columns: auto 560px;
+    grid-template-columns: 660px 560px;
     // grid-template-rows: 100px 100px 100px;
     grid-template-areas:
       "title slider"
@@ -275,6 +275,7 @@
 
   .example__cost {
     width: auto;
+    margin-top: 0;
   }
 
   .example__slider {

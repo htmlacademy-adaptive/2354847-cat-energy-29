@@ -17,6 +17,9 @@
 .additional-products__list {
   display: flex;
   flex-direction: column;
+  margin: 0;
+  padding: 0;
+  list-style: none;
 }
 
 .additional-products__item {
@@ -50,6 +53,16 @@
   font-weight: 400;
   text-transform: uppercase;
   line-height: 16px;
+}
+
+.additional-products__item dt,
+.additional-products__item dd {
+  margin: 0;
+}
+
+.additional-products__item dl {
+  margin: 0;
+  margin-bottom: 12px;
 }
 
 .additional-products__features {
@@ -86,6 +99,8 @@
 }
 
 .additional-products__bonus-description {
+  margin: 0;
+  padding: 0;
   width: 161px;
   color: #ffffff;
   font-size: 16px;
