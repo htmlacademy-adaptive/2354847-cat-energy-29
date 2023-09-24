@@ -1,23 +1,30 @@
-.main-header {
-  width: 100%;
-}
+// .main-header {
+//   width: 100%;
+// }
 
 .main-header__container {
   box-sizing: border-box;
   position: relative;
   width: 320px;
-  min-height: 65px;
+  min-height: 52px;
   margin: 0 auto;
-  padding: 13px 20px 0 20px;
   background-color: #ffffff;
   border-bottom: 1px #e6e6e6 solid;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
+  // display: flex;
+  // flex-direction: row;
+  // justify-content: space-between;
+  // align-items: center;
 }
 
 .main-header__logo {
+  width: 191px;
+  margin-top: 13px;
+  margin-left: 20px;
+  margin-bottom: 15px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 56px;
   opacity: 1;
 
   &:hover {
@@ -45,35 +52,19 @@
   }
 }
 
-.main-header__logo-text {
-  position: absolute;
-  top: 60%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
-
-
-@media (min-width: $tablet-width) {
-  .main-header__logo-text {
-    position: absolute;
-    top: 50px;
-    left: 73px;
-    transform: translateY(-50%);
-  }
-}
-
-@media (min-width: $desktop-width) {
-  .main-header__logo-text {
-    position: absolute;
-    top: 85px;
-    left: 194px;
-  }
-}
+// @media (min-width: $desktop-width) {
+//   .main-header__logo-text {
+//     position: absolute;
+//     top: 85px;
+//     left: 194px;
+//   }
+// }
 
 
 @media (min-width: $tablet-width) {
   .main-header__container {
     position: relative;
+    box-sizing: border-box;
     width: 708px;
     min-height: 50px;
     margin: 0 auto;
@@ -85,6 +76,13 @@
     justify-content: space-between;
     align-items: center;
   }
+
+  .main-header__logo {
+    margin: 0;
+    width: 174px;
+    height: 50px;
+    gap: 13px;
+  }
 }
 
 @media (min-width: $desktop-width) {
@@ -94,10 +92,10 @@
 
   .main-header__container {
     position: relative;
-    width: 1440px;
+    width: 1220px;
     min-height: 59px;
     margin: 0 auto;
-    padding: 55px 110px 0 110px;
+    padding-top: 55px;
     background: transparent;
     display: flex;
     flex-direction: row;
@@ -112,20 +110,20 @@
     z-index: -1;
     width: 100%;
     height: 694px;
-    background-image: linear-gradient(to right, transparent, transparent 50%, rgba(104, 183, 56, 0.85) 50%, rgba(104, 183, 56, 0.85));
+    background-image: linear-gradient(to right, transparent, transparent 50%, rgba(104, 183, 56, 0.85) 50%, rgba(104, 183, 56, 0.85)), url("../img/index/jpeg/index-hero-background.jpg");
+    background-repeat: no-repeat, no-repeat;
+    background-position: 0% 0%, 50vw 0;
   }
 
-  .main-header--index::after {
-    display: block;
-    content: "";
-    width: 720px;
-    height: 694px;
-    position: absolute;
-    top: -55px;
-    left: 50%;
-    background-image: url("../img/index/jpeg/index-hero-background.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    z-index: -2;
+  .main-header__logo {
+    margin: 0;
+    width: 202px;
+    height: 59px;
+    gap: 14px;
+  }
+
+  .main-header__logo-text {
+    width: 118px;
+    height: 21px;
   }
 }

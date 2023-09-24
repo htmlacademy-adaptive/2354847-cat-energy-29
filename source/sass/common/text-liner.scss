@@ -1,17 +1,17 @@
-.text-liner__wrapper {
+.text-liner-wrapper {
   display: flex;
   flex-direction: row;
   gap: 20px;
 }
 
-.text-liner__wrapper::before {
+.text-liner-wrapper::before {
   content: "";
   height: 15px;
   width: calc(50% - 160px);
   border-bottom: 2px solid #68b738;
 }
 
-.text-liner__wrapper::after {
+.text-liner-wrapper::after {
   content: "";
   height: 15px;
   width: 10px;
@@ -20,23 +20,23 @@
 }
 
 @media (min-width: $tablet-width) {
-  .text-liner__wrapper {
+  .text-liner-wrapper {
     gap: 40px;
   }
 
-  .text-liner__wrapper::before {
+  .text-liner-wrapper::before {
     position: relative;
     height: 22px;
-    width: calc(50% - 384px);
+    width: calc(50% - 355px);
   }
 
-  .text-liner__wrapper::after {
+  .text-liner-wrapper::after {
     height: 22px;
   }
 }
 
 @media (min-width: $desktop-width) {
-  .text-liner__wrapper::before {
+  .text-liner-wrapper::before {
     height: 22px;
     width: calc(50% - 650px);
   }

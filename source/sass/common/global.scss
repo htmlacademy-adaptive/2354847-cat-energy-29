@@ -7,6 +7,10 @@ body {
   line-height: 18px;
 }
 
+body::-webkit-scrollbar {
+  width: 0;
+}
+
 h1,
 h2,
 h3,
