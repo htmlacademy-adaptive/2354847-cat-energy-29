@@ -10,36 +10,32 @@
   <link rel="icon" href="img/favicons/favicon.svg" type="image/svg+xml">
   <link rel="apple-touch-icon" href="img/favicons/favicon-180.png">
   <link rel="manifest" href="manifest.webmanifest">
-  <link rel="preload" href="/fonts/oswald/oswaldregular.woff2" as="font" crossorigin="anonymous">
-  <link rel="preload" href="/fonts/lato/Lato-Regular.woff2" as="font" crossorigin="anonymous">
-
 
 </head>
 
 <body class="page-body">
   <!-- header -->
  <header class="main-header main-header--index">
-
   <div class="main-header__container">
     <a class="main-header__logo">
-      <div class="logo__container">
+      <div class="main-header__logo-img-container">
         <picture>
           <source media="(min-width: 1200px)" srcset="img/index/svg/logo-image-desktop.svg" width="70" height="59">
           <source media="(min-width: 768px)" srcset="img/index/svg/logo-image-tablet.svg" width="60" height="50">
-          <img class="logo__img" src="img/index/svg/logo-image-mobile.svg" width="33" height="38" alt="Логотип Cat energy.">
+          <img class="main-header__logo-img" src="img/index/svg/logo-image-mobile.svg" width="33" height="38" alt="Логотип Cat energy.">
         </picture>
       </div>
-    <img class="logo__text logo__text--header" src="img/index/svg/logo-text.svg" width="101" height="18" alt="Cat energy">
+       <img class="main-header__logo-text" src="img/index/svg/logo-text-header.svg" width="101" height="18" alt="Cat energy.">
   </a>
-  <nav class="main-nav main-nav--opened">
-    <button class="main-nav__toggle menu-toggle" type="button"><span class="visually-hidden">Открыть
-        меню</span>
+  <nav class="main-nav main-nav--opened main-nav--nojs">
+    <button class="main-nav__toggle menu-toggle" type="button">
+      <span class="visually-hidden">  Открыть меню</span>
       </button>
     <div class="main-nav__wrapper">
       <ul class="main-nav__list nav-list">
-        <li class="main-nav__item main-nav__item--current"><a href="/index.html">главная</a></li>
-        <li class="main-nav__item"><a href="/catalog.html">каталог продукции</a></li>
-        <li class="main-nav__item"><a href="/form.html">подбор программы</a></li>
+        <li class="main-nav__item main-nav__item--index main-nav__item--current"><a href="/index.html">главная</a></li>
+        <li class="main-nav__item main-nav__item--index"><a href="/catalog.html">каталог продукции</a></li>
+        <li class="main-nav__item main-nav__item--index"><a href="/form.html">подбор программы</a></li>
       </ul>
     </div>
   </nav>
@@ -49,10 +45,13 @@
     <!-- hero -->
     <section class="hero">
         <div class="hero__wrapper">
-          <h1 class="hero__title hero-title">Функциональное питание для котов</h1>
+          <h1 class="hero__title hero-title text-title">Функциональное питание для котов</h1>
           <p class="hero__slogan">Занялся собой? Займись котом!</p>
           <div class="hero__img-container">
             <picture>
+              <source type="image/webp" media="(min-width: 1200px)" srcset="img/index/png/hero-can-photo-desktop.webp 1x, img/index/png/hero-can-photo-desktop@2x.webp 2x" width="552" height="499">
+              <source type="image/webp" media="(min-width: 768px)" srcset="img/index/png/hero-can-photo-tablet.webp 1x, img/index/png/hero-can-photo-tablet@2x.webp 2x" width="709" height="609">
+              <source type="image/webp" srcset="img/index/png/hero-can-photo-mobile.webp 1x, img/index/png/hero-can-photo-mobile@2x.webp 2x" width="280" height="270">
               <source media="(min-width: 1200px)" srcset="img/index/png/hero-can-photo-desktop.png 1x, img/index/png/hero-can-photo-desktop@2x.png 2x" width="552" height="499">
               <source media="(min-width: 768px)" srcset="img/index/png/hero-can-photo-tablet.png 1x, img/index/png/hero-can-photo-tablet@2x.png 2x" width="709" height="609">
             <img class="hero__img" src="img/index/png/hero-can-photo-mobile.png" srcset="img/index/png/hero-can-photo-mobile@2x.png 2x" width="280" height="270"
@@ -75,7 +74,7 @@
         <a class="product-line__link link-button" href="#">
           <span>каталог slim</span>
           <svg width="32" height="12">
-            <use xlink:href="img/sprite.svg#icon--arrow"></use>
+            <use xlink:href="img/sprite.svg#icon-arrow"></use>
           </svg>
         </a>
       </div>
@@ -87,7 +86,7 @@
         <a class="product-line__link link-button" href="#">
           <span>каталог pro</span>
           <svg width="32" height="12">
-            <use xlink:href="img/sprite.svg#icon--arrow"></use>
+            <use xlink:href="./img/sprite.svg#icon-arrow"></use>
           </svg>
         </a>
       </div>
@@ -96,12 +95,12 @@
     <!-- advantages -->
     <section class="advantages">
       <div class="advantages-wrapper">
-        <h2 class="advantages__title">Как это работает</h2>
+        <h2 class="advantages__title text-title">Как это работает</h2>
         <ul class="advantages__list advantages-list-container">
           <li class="advantages__item">
             <div class="advantages__icon">
             <svg width="25" height="28">
-              <use xlink:href="img/sprite.svg#icon--leaf"></use>
+              <use xlink:href="img/sprite.svg#icon-leaf"></use>
             </svg>
               </div>
             <p class="advantages__description">Функциональное питание содержит только
@@ -110,7 +109,7 @@
           <li class="advantages__item">
             <div class="advantages__icon">
               <svg width="26" height="29">
-                <use xlink:href="img/sprite.svg#icon--water"></use>
+                <use xlink:href="img/sprite.svg#icon-water"></use>
               </svg>
               </div>
             <p class="advantages__description">Выпускается в виде порошка, который нужно лишь залить кипятком
@@ -120,7 +119,7 @@
           <li class="advantages__item">
             <div class="advantages__icon">
               <svg width="26" height="30">
-                <use xlink:href="img/sprite.svg#icon--fork"></use>
+                <use xlink:href="img/sprite.svg#icon-eat"></use>
               </svg>
             </div>
             <p class="advantages__description">Замените один-два приема
@@ -129,11 +128,10 @@
           <li class="advantages__item">
             <div class="advantages__icon">
               <svg width="26" height="32">
-                <use xlink:href="img/sprite.svg#icon--clock"></use>
+                <use xlink:href="img/sprite.svg#icon-time"></use>
               </svg>
             </div>
-            <p class="advantages__description">Уже через месяц наслаждайтесь изменениями к лучшему вашего
-              питомца!</p>
+            <p class="advantages__description">Уже через месяц наслаждайтесь изменениями к лучшему вашего&nbsp;питомца!</p>
           </li>
         </ul>
       </div>
@@ -142,7 +140,7 @@
     <section class="example">
       <div class="example-wrapper">
       <div class="example__container">
-        <h2 class="example__title">Живой пример</h2>
+        <h2 class="example__title text-title">Живой пример</h2>
         <p class="example__intro">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim.
           Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16
           часов в день.</p>
@@ -161,17 +159,22 @@
         </div>
         <div class="example__slider">
           <div class="example__slider-box">
-            <button class="example__slider-button">
-              <svg class="example__slider--icon" width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <g id="thumb">
-                <rect x="1" y="1" width="38" height="38" rx="19" fill="white"/>
-                <g id="Vector">
-                <path d="M16 11L8 20L16 29V11Z" fill="currentColor"/>
-                <path d="M32 20L24 11V29L32 20Z" fill="currentColor"/>
-                </g>
-                <rect x="1" y="1" width="38" height="38" rx="19" stroke="currentColor" stroke-width="2"/>
-                </g>
-                </svg>
+            <picture>
+              <source type="image/webp" media="(min-width: 768px)" srcset="img/index/png/cat-before-tablet.webp 1x, img/index/png/cat-before-tablet@2x.webp 2x" width="280" height="512">
+              <source type="image/webp" srcset="img/index/png/cat-before-mobile.webp 1x, img/index/png/cat-before-mobile@2x.webp 2x" width="140" height="256">
+              <source media="(min-width: 768px)" srcset="img/index/png/cat-before-tablet.png 1x, img/index/png/cat-before-tablet@2x.png 2x" width="280" height="512">
+            <img class="example__slider-image" src="img/index/png/cat-before-mobile.png" srcset="img/index/png/cat-before-mobile@2x.png 2x" width="140" height="256" alt="Фото кота до.">
+            </picture>
+            <picture>
+              <source type="image/webp" media="(min-width: 768px)" srcset="img/index/png/cat-after-tablet.webp 1x, img/index/png/cat-after-tablet@2x.webp 2x" width="280" height="512">
+              <source type="image/webp" srcset="img/index/png/cat-after-mobile.webp 1x, img/index/png/cat-after-mobile@2x.webp 2x" width="140" height="256">
+              <source media="(min-width: 768px)" srcset="img/index/png/cat-after-tablet.png 1x, img/index/png/cat-after-tablet@2x.png 2x" width="280" height="512">
+            <img class="example__slider-image" src="img/index/png/cat-after-mobile.png" srcset="img/index/png/cat-after-mobile@2x.png 2x" width="140" height="256" alt="Фото кота после.">
+            </picture>
+            <button class="example__slider-button" aria-label="кнопка для передвижения слайдера">
+              <svg width="40" height="40">
+                <use xlink:href="img/sprite.svg#icon-slider-button"></use>
+              </svg>
             </button>
           </div>
         </div>
@@ -181,43 +184,54 @@
   </main>
   <!-- footer -->
   <footer class="footer">
-    <div class="footer-wrapper--contacts-main">
+    <div class="footer__contacts-main-wrapper">
         <!-- contacts -->
         <section class="contacts">
         <div class="contacts-container">
         <h2 class="visually-hidden">Контакты</h2>
           <div class="contacts-container-text">
-            <p class="contacts__title">приглашаем к сотрудничеству дилеров!</p>
+            <p class="contacts__title">приглашаем к&nbsp;сотрудничеству дилеров!</p>
             <p class="contacts__adress">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
           </div>
           <div class="contacts__map">
             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.603787672859!2d30.320472477602937!3d59.93871647491515!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCDQoNC-0YHRgdC40Y8sIDE5MTE4Ng!5e0!3m2!1sru!2str!4v1694009995612!5m2!1sru!2str" style="border: 0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
           </div>
-        </div>
+          </div>
         </section>
       </div>
   <!-- footer-navigation -->
   <section class="footer-navigation">
-    <div class="footer-wrapper--navigation">
-      <div class="footer-navigation-container">
+    <div class="footer-navigation__wrapper">
+      <div class="footer-navigation__container">
         <h2 class="visually-hidden">Ссылки для навигации</h2>
-          <div class="footer-navigation__logo">
-              <a class="footer-navigation__logo">
-                <div class="footer-navigation-logo__text--icon footer-link__icon"></div>
-              </a>
+          <div class="footer-navigation__logo-container">
+              <a class="footer-navigation__logo-link" href="/index.html">
+                <svg width="128" height="24">
+                  <use xlink:href="img/sprite.svg#icon-logo-text"></use>
+                </svg>
+               </a>
           </div>
           <div class="footer-navigation__social">
               <ul class="social__list">
                 <li class="social__item">
-                  <a class="social__link social__link--vk social__link--icon" href="https://vk.com/htmlacademy">
-                    <span class="visually-hidden">vk</span></a>
+                  <a class="social__link" href="https://vk.com/htmlacademy">
+                    <svg width="28" height="22">
+                      <use xlink:href="img/sprite.svg#icon-vk"></use>
+                    </svg>
+                      <span class="visually-hidden">vk</span></a>
                 </li>
                 <li class="social__item">
-                  <a class="social__link social__link--youtube social__link--icon" href="https://vk.com/htmlacademy">
+                  <a class="social__link" href="https://youtube.com/htmlacademy">
+                    <svg width="28" height="22">
+                      <use xlink:href="img/sprite.svg#icon-youtube"></use>
+                    </svg>
                     <span class="visually-hidden">youtube</span></a>
                 </li>
                 <li class="social__item">
-                  <a class="social__link social__link--tg social__link--icon" href="https://t.me/htmlacademy">
+                  <a class="social__link" href="https://t.me/htmlacademy">
+                    <svg width="28" height="22">
+                      <use xlink:href="img/sprite.svg#icon-tg"></use>
+                    </svg>
                     <span class="visually-hidden">Telegram.</span></a>
                 </li>
               </ul>
@@ -226,7 +240,11 @@
               <span class="visually-hidden">Сделано в htmlacademy</span>
               <a class="footer-navigation__copyright-logo" href="https://htmlacademy.ru/">
                 <span class="footer-navigation__copyright-name">HTML Academy</span>
-                <div class="footer-navigation__copyright--icon"></div>
+                <div class="footer-navigation__copyright-icon">
+                  <svg width="27" height="34">
+                    <use xlink:href="img/sprite.svg#html-academy-logo"></use>
+                  </svg>
+                  </div>
               </a>
             </div>
         </div>

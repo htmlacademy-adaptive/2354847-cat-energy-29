@@ -1,17 +1,20 @@
 .product-line-wrapper {
+  box-sizing: border-box;
   width: 280px;
   margin: 0 auto;
   margin-bottom: 20px;
   display: flex;
+  flex-wrap: wrap;
   flex-direction: column;
   gap: 20px;
+  justify-content: start;
 }
 
 .product-line__item {
   position: relative;
   min-height: 266px;
   box-sizing: border-box;
-  padding-top: 30px;
+  padding-top: 24px;
   background-color: $additional-bg-color;
   color: $base-text-color;
 }
@@ -53,8 +56,7 @@
 }
 
 .product-line__title {
-  margin-left: 90px;
-  margin-bottom: 29px;
+  margin: 5px 0 30px 90px;
   color: $base-text-color;
   font-size: 24px;
   font-family: "Oswald", sans-serif;
@@ -82,25 +84,34 @@
   background-color: $special-grey;
 }
 
-
 .product-line__link {
   margin-left: 20px;
   margin-bottom: 18px;
-  font-size: 20px;
+  font-size: 16px;
+  line-height: 16px;
   display: flex;
   align-items: center;
+  text-decoration: none;
   gap: 15px;
+  color: #000000;
+
+  &:active {
+    opacity: 0.3;
+  }
 }
+
 
 @media (min-width: $tablet-width) {
   .product-line-wrapper {
     width: 708px;
     margin-bottom: 45px;
+    padding-top: 65px;
+    justify-content: center;
     gap: 30px;
   }
 
   .product-line__item {
-    margin-top: 50px;
+    width: 708px;
     min-height: 372px;
     box-sizing: border-box;
     padding: 77px 52px 53px 52px;
@@ -137,7 +148,7 @@
 
   .product-line__title {
     margin: 0;
-    margin-bottom: 29px;
+    margin-bottom: 24px;
     font-size: 36px;
     line-height: 36px;
   }
@@ -145,12 +156,13 @@
   .product-line__description {
     width: 340px;
     margin: 0;
-    margin-bottom: 52px;
+    margin-bottom: 55px;
     font-size: 16px;
     line-height: 24px;
   }
 
   .product-line__link {
+    font-size: 20px;
     margin: 0;
     gap: 25px;
   }
@@ -159,11 +171,12 @@
 @media (min-width: $desktop-width) {
   .product-line-wrapper {
     box-sizing: border-box;
-    width: 1440px;
+    width: 1220px;
     margin: 0 auto;
-    padding: 0 110px 71px 110px;
+    padding-top: 62px;
+    padding-bottom: 71px;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: center;
     gap: 80px;
   }
 
@@ -210,7 +223,7 @@
   .product-line__description {
     width: 460px;
     margin: 0;
-    margin-bottom: 27px;
+    margin-bottom: 30px;
   }
 
   .product-line__link {

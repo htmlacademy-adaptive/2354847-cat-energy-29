@@ -5,14 +5,11 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Cat Energy</title>
-  <link rel="stylesheet" href="/css/style.min.css">
+  <link rel="stylesheet" href="css/style.min.css">
   <link rel="icon" href="favicon.ico">
   <link rel="icon" href="img/favicons/favicon.svg" type="image/svg+xml">
   <link rel="apple-touch-icon" href="img/favicons/favicon-180.png">
   <link rel="manifest" href="manifest.webmanifest">
-  <link rel="preload" href="/fonts/oswald/oswaldregular.woff2" as="font" crossorigin="anonymous">
-  <link rel="preload" href="/fonts/lato/Lato-Regular.woff2" as="font" crossorigin="anonymous">
-
 </head>
 
 <body class="page-body">
@@ -20,14 +17,14 @@
  <header class="main-header">
   <div class="main-header__container">
     <a class="main-header__logo">
-      <div class="logo__container">
+      <div class="main-header__logo-img-container">
         <picture>
           <source media="(min-width: 1200px)" srcset="img/index/svg/logo-image-desktop.svg" width="70" height="59">
           <source media="(min-width: 768px)" srcset="img/index/svg/logo-image-tablet.svg" width="60" height="50">
-          <img class="logo__img" src="img/index/svg/logo-image-mobile.svg" width="33" height="38" alt="Логотип Cat energy.">
+          <img class="main-header__logo-img" src="img/index/svg/logo-image-mobile.svg" width="33" height="38" alt="Логотип Cat energy.">
         </picture>
       </div>
-    <img class="logo__text logo__text--header" src="img/index/svg/logo-text.svg" width="101" height="18" alt="Cat energy">
+       <img class="main-header__logo-text" src="img/index/svg/logo-text-header.svg" width="101" height="18" alt="Cat energy.">
   </a>
   <nav class="main-nav main-nav--opened">
     <button class="main-nav__toggle menu-toggle" type="button"><span class="visually-hidden">Открыть
@@ -58,7 +55,7 @@
               </picture>
                </div>
               <div class="product-card__description">
-            <h3 class="product-card__title">Cat Energy PRO 500 г</h3>
+            <h3 class="product-card__title text-title">Cat Energy PRO 500 г</h3>
             <div class="product-card__features">
               <dl class="product-card__item">
                 <dt class="product-card__name">Масса</dt>
@@ -87,7 +84,7 @@
               </picture>
                 </div>
               <div class="product-card__description">
-            <h3 class="product-card__title">Cat Energy PRO 1000 г</h3>
+            <h3 class="product-card__title text-title">Cat Energy PRO 1000 г</h3>
             <div class="product-card__features features">
               <dl class="product-card__item">
                 <dt class="product-card__name">Масса</dt>
@@ -114,7 +111,7 @@
               </picture>
               </div>
               <div class="product-card__description">
-            <h3 class="product-card__title">Cat Energy PRO 500 г</h3>
+            <h3 class="product-card__title text-title">Cat Energy PRO 500 г</h3>
             <div class="product-card__features features">
               <dl class="product-card__item">
                 <dt class="product-card__name">Масса</dt>
@@ -140,7 +137,7 @@
                </picture>
                </div>
               <div class="product-card__description">
-            <h3 class="product-card__title">Cat Energy slim 1000 г</h3>
+            <h3 class="product-card__title text-title">Cat Energy PRO 1000 г</h3>
             <div class="product-card__features">
               <dl class="product-card__item">
                 <dt class="product-card__name">Масса</dt>
@@ -167,7 +164,7 @@
                </picture>
                </div>
               <div class="product-card__description">
-            <h3 class="product-card__title">Cat Energy slim 500 г</h3>
+            <h3 class="product-card__title text-title">Cat Energy slim 500 г</h3>
             <div class="product-card__features">
               <dl class="product-card__item">
                 <dt class="product-card__name">Масса</dt>
@@ -189,12 +186,12 @@
           <li class="catalog__item product-card">
             <div class="product-card__img-wrapper">
               <picture>
-                <source media="(min-width: 768px)" srcset="img/catalog/png/cat-energy-pro-1000-buckwheat-tablet.png 1x, img/catalog/png/cat-energy-pro-1000-buckwheat-tablet @2x.png 2x" width="200" height="210">
+                <source media="(min-width: 768px)" srcset="img/catalog/png/cat-energy-pro-1000-buckwheat-tablet.png 1x, img/catalog/png/cat-energy-pro-1000-buckwheat-tablet@2x.png 2x" width="200" height="210">
                <img class="product-card__img" src="img/catalog/png/cat-energy-pro-1000-buckwheat-mobile.png"  srcset="img/catalog/png/cat-energy-pro-1000-buckwheat-mobile@2x.png 2x" width="84" height="100" alt="Cat Energy PRO 1000 г гречка.">
                </picture>
                </div>
               <div class="product-card__description">
-            <h3 class="product-card__title">Cat Energy slim 1000 г</h3>
+            <h3 class="product-card__title text-title">Cat Energy slim 1000 г</h3>
             <div class="product-card__features ">
               <dl class="product-card__item">
                 <dt class="product-card__name">Масса</dt>
@@ -216,12 +213,12 @@
           <li class="catalog__item product-card">
             <div class="product-card__img-wrapper">
               <picture>
-                <source media="(min-width: 768px)" srcset="img/catalog/png/cat-energy-pro-500-rice-tablet.png 1x, img/catalog/png/cat-energy-pro-500-rice-tablet @2x.png 2x" width="200" height="210">
+                <source media="(min-width: 768px)" srcset="img/catalog/png/cat-energy-pro-500-rice-tablet.png 1x, img/catalog/png/cat-energy-pro-500-rice-tablet@2x.png 2x" width="200" height="210">
                <img class="product-card__img" src="img/catalog/png/cat-energy-pro-500-rice-mobile.png"  srcset="img/catalog/png/cat-energy-pro-500-rice-mobile@2x.png 2x" width="72" height="84" alt="Cat Energy PRO 500 г рис.">
                </picture>
                </div>
               <div class="product-card__description">
-            <h3 class="product-card__title">Cat Energy slim 500 г</h3>
+            <h3 class="product-card__title text-title">Cat Energy slim 500 г</h3>
             <div class="product-card__features">
               <dl class="product-card__item">
                 <dt class="product-card__name">Масса</dt>
@@ -243,7 +240,7 @@
           <li class="catalog__item empty-card">
             <div class="empty-card__description">
             <div class="empty-card__icon"></div>
-            <h2 class="empty-card__title">Показать еще 100500 товаров</h2>
+            <h2 class="empty-card__title text-title">Показать еще 100500 товаров</h2>
             <p class="empty-card__text">На самом деле вкусов
               гораздо больше!</p>
             </div>
@@ -254,13 +251,13 @@
     </section>
     <!-- additional-products -->
     <section class="additional-products">
-      <div class="text-liner__wrapper">
-        <h2 class="additional-products__title">Дополнительные товары</h2>
+      <div class="text-liner-wrapper">
+        <h2 class="additional-products__title text-title">Дополнительные товары</h2>
         </div>
       <div class="additional-products-container">
         <ul class="additional-products__list">
           <li class="additional-products__item">
-            <h3 class="additional-products__name">Сахарозаменитель</h3>
+            <h3 class="additional-products__name text-title">Сахарозаменитель</h3>
             <dl class="additional-products__features">
               <dt class="additional-products__description">1 упаковка (100 г)</dt>
               <dd class="additional-products__cost">200 ₽</dd>
@@ -269,7 +266,7 @@
           </li>
 
           <li class="additional-products__item">
-            <h3 class="additional-products__name">питьевая вода</h3>
+            <h3 class="additional-products__name text-title">питьевая вода</h3>
             <dl class="additional-products__features">
               <dt class="additional-products__description">5 литров</dt>
               <dd class="additional-products__cost">50 ₽</dd>
@@ -278,7 +275,7 @@
           </li>
 
           <li class="additional-products__item">
-            <h3 class="additional-products__name">молоко</h3>
+            <h3 class="additional-products__name text-title">молоко</h3>
             <dl class="additional-products__features">
               <dt class="additional-products__description">1 литр</dt>
               <dd class="additional-products__cost">100 ₽</dd>
@@ -287,7 +284,7 @@
           </li>
 
           <li class="additional-products__item">
-            <h3 class="additional-products__name">витамины</h3>
+            <h3 class="additional-products__name text-title">витамины</h3>
             <dl class="additional-products__features">
               <dt class="additional-products__description">1 упаковка (30 г)</dt>
               <dd class="additional-products__cost">300 ₽</dd>
@@ -306,7 +303,7 @@
                 <path d="M64.5155 53.4703H17.4872C16.7973 53.4703 16.2373 52.9103 16.2373 52.2203C16.2373 51.5303 16.7973 50.9703 17.4872 50.9703H64.5155C65.2055 50.9703 65.7654 51.5303 65.7654 52.2203C65.7654 52.9103 65.2061 53.4703 64.5155 53.4703Z" fill="white"/>
                 </svg>
               <p class="additional-products__bonus-description">Закажите все
-                и получите чехол для
+                и&nbsp;получите чехол для
                 кота в подарок!</p>
             </div>
           </div>
@@ -316,13 +313,13 @@
     </main>
  <!-- footer -->
  <footer class="footer">
-      <div class="footer-wrapper--contacts">
+      <div class="footer__contacts-wrapper">
           <!-- contacts -->
           <section class="contacts">
             <div class="contacts-container">
             <h2 class="visually-hidden">Контакты</h2>
               <div class="contacts-container-text">
-                <p class="contacts__title">приглашаем к сотрудничеству дилеров!</p>
+                <p class="contacts__title">приглашаем к&nbsp;сотрудничеству дилеров!</p>
                 <p class="contacts__adress">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
               </div>
               <div class="contacts__map">
@@ -332,45 +329,56 @@
             </section>
     </div>
    <!-- footer-navigation -->
-  <section class="footer-navigation">
-    <div class="footer-wrapper--navigation">
-    <div class="footer-navigation-container">
-      <h2 class="visually-hidden">Ссылки для навигации</h2>
-    <div class="footer-navigation__logo">
-      <a class="footer-navigation__logo">
-        <div class="footer-navigation-logo__text--icon footer-link__icon"></div>
-    </a>
-  </div>
-     <div class="footer-navigation__social">
-      <ul class="social__list">
-        <li class="social__item">
-           <a class="social__link" href="https://vk.com/htmlacademy">
-            <div class="social__link--vk social__link--icon"></div>
-            <span class="visually-hidden">vk</span></a>
-        </li>
-        <li class="social__item">
-          <a class="social__link" href="https://vk.com/htmlacademy">
-            <div class="social__link--youtube social__link--icon"></div>
-            <span class="visually-hidden">youtube</span></a>
-        </li>
-        <li class="social__item">
-          <a class="social__link" href="https://t.me/htmlacademy">
-            <div class="social__link--tg social__link--icon"></div>
-            <span class="visually-hidden">Telegram.</span></a>
-        </li>
-      </ul>
+   <section class="footer-navigation">
+    <div class="footer-navigation__wrapper">
+      <div class="footer-navigation__container">
+        <h2 class="visually-hidden">Ссылки для навигации</h2>
+          <div class="footer-navigation__logo-container">
+              <a class="footer-navigation__logo-link" href="/index.html">
+                <svg width="128" height="24">
+                  <use xlink:href="img/sprite.svg#icon-logo-text"></use>
+                </svg>
+               </a>
+          </div>
+          <div class="footer-navigation__social">
+              <ul class="social__list">
+                <li class="social__item">
+                  <a class="social__link" href="https://vk.com/htmlacademy">
+                    <svg width="28" height="22">
+                      <use xlink:href="img/sprite.svg#icon-vk"></use>
+                    </svg>
+                      <span class="visually-hidden">vk</span></a>
+                </li>
+                <li class="social__item">
+                  <a class="social__link" href="https://youtube.com/htmlacademy">
+                    <svg width="28" height="22">
+                      <use xlink:href="img/sprite.svg#icon-youtube"></use>
+                    </svg>
+                    <span class="visually-hidden">youtube</span></a>
+                </li>
+                <li class="social__item">
+                  <a class="social__link" href="https://t.me/htmlacademy">
+                    <svg width="28" height="22">
+                      <use xlink:href="img/sprite.svg#icon-tg"></use>
+                    </svg>
+                    <span class="visually-hidden">Telegram.</span></a>
+                </li>
+              </ul>
+            </div>
+            <div class="footer-navigation__copyright">
+              <span class="visually-hidden">Сделано в htmlacademy</span>
+              <a class="footer-navigation__copyright-logo" href="https://htmlacademy.ru/">
+                <span class="footer-navigation__copyright-name">HTML Academy</span>
+                <div class="footer-navigation__copyright-icon">
+                  <svg width="27" height="34">
+                    <use xlink:href="img/sprite.svg#html-academy-logo"></use>
+                  </svg>
+                  </div>
+              </a>
+            </div>
+        </div>
     </div>
-    <div class="footer-navigation__copyright">
-      <span class="visually-hidden">Сделано в htmlacademy</span>
-      <a class="footer-navigation__copyright-logo" href="https://htmlacademy.ru/">
-        <span class="footer-navigation__copyright-name">HTML Academy</span>
-        <div class="footer-navigation__copyright--icon"></div>
-      </a>
-    </div>
-</div>
-</div>
-</section>
+  </section>
 </footer>
 <script src="js/script.js"></script>
 </body>
-

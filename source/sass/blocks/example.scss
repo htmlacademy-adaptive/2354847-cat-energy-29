@@ -28,7 +28,7 @@
 }
 
 .example__list {
-  margin-bottom: 20px;
+  margin-bottom: 15px;
   display: flex;
   justify-content: space-between;
   align-items: start;
@@ -97,9 +97,9 @@
 }
 
 .example__slider-box {
+  position: relative;
   width: 280px;
   height: 256px;
-  background-image: url("../img/index/png/cat-before.png"), url("../img/index/png/cat-after.png");
   background-position: left, right;
   background-repeat: no-repeat, no-repeat;
   background-size: contain;
@@ -109,33 +109,25 @@
 
 .example__slider-button {
   box-sizing: border-box;
+  position: absolute;
   padding: 0;
   width: 40px;
   height: 256px;
   border: none;
+  color: #666666;
   background-image: linear-gradient(to right, transparent 18px, #666666 18px, #666666 22px, transparent 22px);
   background-color: transparent;
   background-position: center;
   background-repeat: no-repeat;
 
   &:hover {
+    color: #68b738;
     background-image: linear-gradient(to right, transparent 18px, rgb(105, 183, 56) 18px, rgb(105, 183, 56) 22px, transparent 22px);
   }
 
   &:active {
-    background-image: linear-gradient(to right, transparent 18px, rgb(95, 172, 47, 0.6) 18px, rgb(105, 183, 56, 0.6) 22px, transparent 22px);
-  }
-}
-
-.example__slider--icon {
-  color: #666666;
-
-  &:hover {
-    color: #68b738;
-  }
-
-  &:active {
     color: rgb(95, 172, 47, 0.6);
+    background-image: linear-gradient(to right, transparent 18px, rgb(95, 172, 47, 0.6) 18px, rgb(105, 183, 56, 0.6) 22px, transparent 22px);
   }
 }
 
@@ -147,11 +139,13 @@
   }
 
   .example__container {
+    display: block;
     box-sizing: border-box;
-    width: 768px;
+    width: 708px;
     min-height: 1081px;
     margin: 0 auto;
-    padding: 45px 30px 101px 30px;
+    padding: 0;
+    padding-top: 42px;
   }
 
   .example__title {
@@ -207,9 +201,10 @@
 
   .example__cost {
     width: 174px;
-    margin-top: 20px;
+    margin: 0;
+    margin-top: 10px;
     font-size: 20px;
-    line-height: 20px;
+    line-height: 27px;
     text-align: end;
   }
 
@@ -238,14 +233,14 @@
   }
 
   .example__container {
-    box-sizing: border-box;
-    width: 1440px;
+    width: 1220px;
     min-height: 594px;
     margin: 0 auto;
-    padding: 0 110px 75px 110px;
+    padding: 0;
+    padding-bottom: 75px;
 
     display: grid;
-    grid-template-columns: auto 560px;
+    grid-template-columns: 660px 560px;
     // grid-template-rows: 100px 100px 100px;
     grid-template-areas:
       "title slider"
@@ -280,6 +275,7 @@
 
   .example__cost {
     width: auto;
+    margin-top: 0;
   }
 
   .example__slider {

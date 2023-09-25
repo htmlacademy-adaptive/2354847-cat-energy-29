@@ -17,7 +17,7 @@
   width: 30px;
   height: 30px;
   content: "";
-  background-image: url("/img/catalog/svg/icon_plus.svg");
+  background-image: url("/img/catalog/svg/icon-plus.svg");
   background-size: cover;
   background-repeat: no-repeat;
   margin-bottom: 23px;
@@ -35,6 +35,8 @@
 }
 
 .empty-card__text {
+  margin: 0;
+  padding: 0;
   color: $addithional-text-color;
   font-size: 12px;
   font-family: $Lato;
@@ -46,6 +48,7 @@
 .empty-card__button {
   width: 280px;
 }
+
 
 @media (min-width: $tablet-width) {
   .empty-card {
@@ -91,7 +94,7 @@
     margin-top: 82px;
     min-height: 429px;
     background-color: $base-bg-color;
-    padding: 50px 20px 40px 20px;
+    padding: 50px 15px 40px 15px;
     border-top: 1px $additional-bg-color solid;
   }
 

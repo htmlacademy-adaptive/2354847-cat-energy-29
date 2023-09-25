@@ -1,35 +1,30 @@
-.footer-wrapper--contacts-main {
+.footer__contacts-main-wrapper {
   background-color: $base-bg-color;
   width: 100%;
 }
 
-.footer-wrapper--contacts {
+.footer__contacts-wrapper {
   background-color: $additional-bg-color;
   width: 100%;
 }
 
-.footer-wrapper--navigation {
-  background-color: $additional-bg-color;
-  width: 100%;
-}
+// .footer-container {
+//   width: 320px;
+//   margin: 0 auto;}
 
-.footer-container {
-  width: 320px;
-  margin: 0 auto;
-}
 
 @media (min-width: $tablet-width) {
-  .footer-container {
-    width: 768px;
-  }
+  // .footer-container {
+  //   width: 768px;
+  // }
 }
 
 @media (min-width: $desktop-width) {
-  .footer-wrapper--contacts-main {
+  .footer__contacts-main-wrapper {
     background-color: $additional-bg-color;
   }
 
-  .footer-container {
-    width: 1440px;
-  }
+  // .footer-container {
+  //   width: 1440px;
+  // }
 }
