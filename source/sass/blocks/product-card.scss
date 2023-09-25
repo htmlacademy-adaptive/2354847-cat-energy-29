@@ -49,6 +49,7 @@
 
 
 .product-card__title {
+  margin-top: 2px;
   width: 80px;
   color: #222222;
   font-size: 16px;
@@ -74,9 +75,7 @@
   width: 280px;
 }
 
-.product-card__features dl,
-.product-card__features dt,
-.product-card__features dd {
+.product-card__features dl {
   margin: 0;
 }
 

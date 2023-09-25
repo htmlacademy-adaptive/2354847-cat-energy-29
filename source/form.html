@@ -14,7 +14,7 @@
 
 <body class="page-body">
   <!-- header -->
- <header class="main-header">
+  <header class="main-header">
   <div class="main-header__container">
     <a class="main-header__logo">
       <div class="main-header__logo-img-container">
@@ -24,9 +24,9 @@
           <img class="main-header__logo-img" src="img/index/svg/logo-image-mobile.svg" width="33" height="38" alt="Логотип Cat energy.">
         </picture>
       </div>
-       <img class="main-header__logo-text" src="img/index/svg/logo-text-header.svg" width="101" height="18" alt="Cat energy.">
+          <img class="main-header__logo-text" src="img/index/svg/logo-text-header.svg" width="101" height="18" alt="Cat energy.">
   </a>
-  <nav class="main-nav main-nav--opened">
+  <nav class="main-nav main-nav--closed main-nav--nojs">
     <button class="main-nav__toggle menu-toggle" type="button"><span class="visually-hidden">Открыть
         меню</span>
       </button>
@@ -61,6 +61,7 @@
           </li>
           <li class="form__item">
             <label>
+
               Вес&nbsp;(кг):*
               <input id="weight" type="number" name="weight" placeholder="7">
             </label>
@@ -76,17 +77,17 @@
         <fieldset class="form__fieldset form__fieldset--radio">
           <legend class="visually-hidden">Выберите программу питания</legend>
           <ul class="form__list form-radio">
-            <li class="form__item--radio"><label class="control">
+            <li class="form-radio__item"><label class="control">
                 <input class="control-input visually-hidden" type="radio" name="programm" checked>
                 <span class="radio-mark"></span>
                 <span class="control-label">похудение</span>
               </label></li>
-            <li class="form__item--radio"><label class="control">
+            <li class="form-radio__item"><label class="control">
                 <input class="control-input visually-hidden" type="radio" name="programm">
                 <span class="radio-mark"></span>
                 <span class="control-label">Набор массы</span>
               </label></li>
-            <li class="form__item--radio"><label class="control">
+            <li class="form-radio__item"><label class="control">
                 <input class="control-input visually-hidden" type="radio" name="programm">
                 <span class="radio-mark"></span>
                 <span class="control-label">Не знаю (Нужен ваш совет)</span>
@@ -104,7 +105,7 @@
             <label>
               E-&nbsp;mail:*
               <input id="e-mail" type="email" name="e-mail" placeholder="kuklachev@gmail.com" required>
-               <svg class="form__item-contacts-icon" width="21" height="20">
+                  <svg class="form__item-contacts-icon" width="21" height="20">
               <use xlink:href="img/sprite.svg#icon-mail"></use>
             </svg>
             </label>
@@ -134,23 +135,23 @@
         <div class="form-container">
             <fieldset class="form__fieldset form__additional">
               <legend class="visually-hidden">Выберите дополнительные товары</legend>
-              <ul class="form__list form-checkbox">
-                <li class="form__item--checkbox"><label>
+              <ul class="form__list form__list-checkbox form-checkbox">
+                <li class="form-checkbox__item"><label>
                     <input class="control-input visually-hidden" type="checkbox" name="sugar" checked>
                     <span class="control-mark"></span>
                     <span class="control-label">сахарозаменитель</span>
                   </label></li>
-                <li class="form__item--checkbox"><label class="control">
+                <li class="form-checkbox__item"><label class="control">
                     <input class="control-input visually-hidden" type="checkbox" name="water">
                     <span class="control-mark"></span>
                     <span class="control-label">питьевая вода</span>
                   </label></li>
-                <li class="form__item--checkbox"><label class="control">
+                <li class="form-checkbox__item"><label class="control">
                     <input class="control-input visually-hidden" type="checkbox" name="milk">
                     <span class="control-mark"></span>
                     <span class="control-label">молоко</span>
                   </label></li>
-                <li class="form__item--checkbox"><label class="control">
+                <li class="form-checkbox__item"><label class="control">
                     <input class="control-input visually-hidden" type="checkbox" name="vitamins">
                     <span class="control-mark"></span>
                     <span class="control-label">витамины</span>
@@ -182,7 +183,7 @@
           </div>
       </section>
   </div>
-   <!-- footer-navigation -->
+    <!-- footer-navigation -->
   <section class="footer-navigation">
     <div class="footer-navigation__wrapper">
       <div class="footer-navigation__container">
@@ -192,33 +193,33 @@
                 <svg width="128" height="24">
                   <use xlink:href="img/sprite.svg#icon-logo-text"></use>
                 </svg>
-               </a>
+                </a>
           </div>
           <div class="footer-navigation__social">
-              <ul class="social__list">
-                <li class="social__item">
-                  <a class="social__link" href="https://vk.com/htmlacademy">
-                    <svg width="28" height="22">
-                      <use xlink:href="img/sprite.svg#icon-vk"></use>
-                    </svg>
-                      <span class="visually-hidden">vk</span></a>
-                </li>
-                <li class="social__item">
-                  <a class="social__link" href="https://youtube.com/htmlacademy">
-                    <svg width="28" height="22">
-                      <use xlink:href="img/sprite.svg#icon-youtube"></use>
-                    </svg>
-                    <span class="visually-hidden">youtube</span></a>
-                </li>
-                <li class="social__item">
-                  <a class="social__link" href="https://t.me/htmlacademy">
-                    <svg width="28" height="22">
-                      <use xlink:href="img/sprite.svg#icon-tg"></use>
-                    </svg>
-                    <span class="visually-hidden">Telegram.</span></a>
-                </li>
-              </ul>
-            </div>
+            <ul class="footer-navigation__social-list social-list">
+              <li class="social-list__item">
+                <a class="social-list__link" href="https://vk.com/htmlacademy">
+                  <svg width="28" height="22">
+                    <use xlink:href="img/sprite.svg#icon-vk"></use>
+                  </svg>
+                    <span class="visually-hidden">vk</span></a>
+              </li>
+              <li class="social-list__item">
+                <a class="social-list__link" href="https://youtube.com/htmlacademy">
+                  <svg width="28" height="22">
+                    <use xlink:href="img/sprite.svg#icon-youtube"></use>
+                  </svg>
+                  <span class="visually-hidden">youtube</span></a>
+              </li>
+              <li class="social-list__item">
+                <a class="social-list__link" href="https://t.me/htmlacademy">
+                  <svg width="28" height="22">
+                    <use xlink:href="img/sprite.svg#icon-tg"></use>
+                  </svg>
+                  <span class="visually-hidden">Telegram.</span></a>
+              </li>
+            </ul>
+          </div>
             <div class="footer-navigation__copyright">
               <span class="visually-hidden">Сделано в htmlacademy</span>
               <a class="footer-navigation__copyright-logo" href="https://htmlacademy.ru/">

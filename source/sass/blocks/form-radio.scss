@@ -1,0 +1,46 @@
+.form-radio__item label {
+  margin-bottom: 14px;
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: row;
+  justify-content: start;
+  align-items: center;
+  gap: 15px;
+}
+
+.form-radio__item:last-child label {
+  margin-bottom: 0;
+}
+
+.control-input[type="radio"]:checked + .radio-mark {
+  background-image: url("/img/form/svg/radio-button.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  z-index: 1;
+}
+
+.control-input[type="radio"]:hover ~ .radio-mark {
+  border: 1px #bababa solid;
+}
+
+.control-input[type="radio"]:disabled ~ span {
+  border-color: #bababa;
+  opacity: 0.3;
+}
+
+.radio-mark {
+  content: "";
+  box-sizing: border-box;
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  background-color: $base-bg-color;
+  border: 1px #cdcdcd solid;
+  border-radius: 50%;
+  left: 0;
+
+  @media (min-width: $tablet-width) {
+    width: 40px;
+    height: 40px;
+  }
+}

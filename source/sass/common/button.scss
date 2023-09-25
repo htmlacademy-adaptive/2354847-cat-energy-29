@@ -14,7 +14,11 @@
 .primary-button {
   background-color: $accent-color;
 
-  &:hover,
+  &:hover {
+    background-color: rgb(95, 172, 47);
+    color: hsl(0, 0%, 100%);
+  }
+
   &:active {
     background-color: rgb(95, 172, 47);
     color: rgb(100%, 100%, 100%, 0.3);
@@ -26,17 +30,12 @@
 }
 
 .secondary-button {
-  background-color: $additional-bg-color;
+  background-color: #f2f2f2;
   color: $addithional-text-color;
 
   &:hover,
   &:active {
-    background-color: #f2f2f2;
-    color: rgb(100%, 100%, 100%, 0.3);
-  }
-
-  &:active text {
-    opacity: 0.3;
+    background-color: #ebebeb;
   }
 }
 
