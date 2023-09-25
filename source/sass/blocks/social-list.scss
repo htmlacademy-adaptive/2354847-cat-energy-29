@@ -1,4 +1,4 @@
-.social__list {
+.social-list {
   margin: 0;
   padding: 0;
   list-style: none;
@@ -15,14 +15,14 @@
   }
 }
 
-.social__item {
+.social-list__item {
   display: block;
   box-sizing: border-box;
   width: 32px;
   text-align: center;
 }
 
-.social__link {
+.social-list__link {
   content: "";
   display: block;
   width: 28px;
@@ -34,12 +34,11 @@
   color: rgb(102, 102, 102);
 }
 
-.social__link:focus,
-.social__link:hover {
+.social-list__link:focus,
+.social-list__link:hover {
   color: $accent-color;
 }
 
-.social__link:active {
+.social-list__link:active {
   color: rgba(104, 183, 56, 0.3);
 }
-

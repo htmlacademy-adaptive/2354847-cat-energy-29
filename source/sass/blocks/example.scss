@@ -20,6 +20,7 @@
 }
 
 .example__intro {
+  margin-top: 0;
   margin-bottom: 20px;
   color: $addithional-text-color;
   font-family: $Lato;
@@ -145,19 +146,20 @@
     min-height: 1081px;
     margin: 0 auto;
     padding: 0;
-    padding-top: 42px;
+    padding-top: 46px;
   }
 
   .example__title {
-    margin-bottom: 60px;
+    margin-bottom: 62px;
     font-size: 60px;
     line-height: 60px;
   }
 
   .example__intro {
-    margin-bottom: 55px;
+    margin-bottom: 54px;
     font-size: 16px;
     line-height: 24px;
+    color: #444444;
   }
 
   .example__facts {
@@ -170,7 +172,7 @@
   .example__list {
     width: 367px;
     margin-right: 10px;
-    margin-bottom: 99px;
+    margin-bottom: 104px;
   }
 
   .example__item {
@@ -237,7 +239,7 @@
     min-height: 594px;
     margin: 0 auto;
     padding: 0;
-    padding-bottom: 75px;
+    padding-bottom: 70px;
 
     display: grid;
     grid-template-columns: 660px 560px;
@@ -254,6 +256,7 @@
   }
 
   .example__intro {
+    margin-top: 0;
     width: 433px;
     margin-bottom: 69px;
     grid-area: intro;
@@ -266,7 +269,7 @@
 
   .example__list {
     margin: 0;
-    margin-bottom: 55px;
+    margin-bottom: 56px;
   }
 
   .example__description {

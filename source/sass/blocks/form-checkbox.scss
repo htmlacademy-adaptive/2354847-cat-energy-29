@@ -1,0 +1,56 @@
+.form-checkbox__item label {
+  margin-bottom: 14px;
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: row;
+  justify-content: start;
+  align-items: center;
+  gap: 15px;
+}
+
+.form-checkbox__item input {
+  width: 30px;
+  height: 30px;
+  background-color: $base-bg-color;
+  border: 1px #cdcdcd solid;
+}
+
+.control-input[type="checkbox"]:checked + .control-mark {
+  background-image: url("/img/form/svg/checkbox-button.svg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  z-index: 1;
+}
+
+.control-input[type="checkbox"]:hover ~ .control-mark {
+  border: 1px #bababa solid;
+}
+
+.control-input[type="checkbox"]:disabled ~ span {
+  border-color: #bababa;
+  opacity: 0.3;
+}
+
+@media (min-width: $tablet-width) {
+  .form-checkbox__item label {
+    width: 289px;
+    margin: 0;
+    gap: 20px;
+  }
+
+  .form-checkbox__item input {
+    width: 40px;
+    height: 40px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .form-checkbox__item label {
+    width: 325px;
+  }
+
+  .form-checkbox__item:last-child label {
+    width: 245px;
+  }
+}

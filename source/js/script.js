@@ -3,8 +3,12 @@ let navButton = document.querySelector('.main-nav__toggle');
 
 nav.classList.remove('main-nav--nojs');
 
-navButton.onclick = function() {
-
-  nav.classList.toggle('main-nav--closed');
-  nav.classList.toggle('main-nav--opened');
-};
+navButton.addEventListener('click', function () {
+  if (nav.classList.contains('main-nav--closed')) {
+    nav.classList.remove('main-nav--closed');
+    nav.classList.add('main-nav--opened');
+  } else {
+    nav.classList.add('main-nav--closed');
+    nav.classList.remove('main-nav--opened');
+  }
+});
